@@ -51,22 +51,14 @@ class Tabs extends React.Component{
               <div className='tabsheader'>{tab}</div>
             );
           })}
-          {/* <div className='tabsheader'>{this.state.tabs[this.state.startTab]}</div>
-          <div className='tabsheader'>{this.state.tabs[this.state.startTab + 1]}</div>
-          <div className='tabsheader'>{this.state.tabs[this.state.startTab + 2]}</div>
-          <div className='tabsheader'>{this.state.tabs[this.state.startTab + 3]}</div>
-          <div className='tabsheader'>{this.state.tabs[this.state.startTab + 4]}</div>
-          <div className='tabsheader'>{this.state.tabs[this.state.startTab + 5]}</div>
-          <div className='tabsheader'>{this.state.tabs[this.state.startTab + 6]}</div> */}
         </div>
         <span className='scrollarrows'>
           <span className='arrowspan' onClick={this.decrementArray}><img className='arrowimage' src={leftarrow} alt='Left arrow for tabs scrolling'/></span>
           <span className='arrowspan' onClick={this.incrementArray}><img className='arrowimage' src={rightarrow} alt='Rightarrow for tabs scrolling'/></span>
         </span>
-        <img src={tab1}/>
       </div>
     );
   }
 }
 
-export default Tabs;
+export { Tabs };
