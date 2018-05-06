@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template: repeat(100, 1%) / repeat(100, 1%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.tabs{
+  grid-column: 1/19;
+  grid-row: 1/4;
+
 }
 
 .App-logo {
