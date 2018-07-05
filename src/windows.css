@@ -1,59 +1,58 @@
 *{
   border-collapse: collapse;
 }
-.tabsdiv{
-  grid-column: 1/20;
-  grid-row: 1/4;
-  display: grid;
-  grid-template: repeat(100, 1%) / repeat(100, 1%);
-  font-family: helvetica, ms-sans, sans-serif;
-  background: #D4D0C8;
+
+
+:root{
+  --titleBarColor: #808080;
+  --windowsGrey: #D4D0C8;
+  --leftColContentColor: #FFFBF0;
 }
 
-.leftcolumnwindowsdiv{
-  grid-column: 1/20;
-  grid-row: 4/10;
+.leftCol{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15vw;
+  height: 95%;
+}
+
+.tabsdiv{
+  font-family: helvetica, ms-sans, sans-serif;
+  background: var(--windowsGrey);
+}
+
+.scrollarrows{
+  margin-right: 2px;
+  margin-bottom: 2px;
 }
 
 .titleBar{
+  box-sizing: border-box;
   background: linear-gradient(to right, #808080 40%, #C0C0C0);
-  color: #D4D0C8;
+  color: var(--windowsGrey);
   width: 100%;
-  grid-column: 1/100;
-  grid-row: 1/45;
   text-align: left;
   padding-left: 0.4em;
   padding-top: 0.3em;
   font-weight: 800;
   font-size: 15px;
+}
 
+.tabBar{
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .tabs{
-  grid-column: 1/100;
-  grid-row: 60/90;
   display:flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  max-width: 100%;
+  width: 85%;
   white-space: nowrap;
-}
-
-
-.scrollarrows{
-  grid-column: 89/100;
-  grid-row: 60/90;
-}
-
-.arrowimage{
-  width: 1em;
-  height: .75em;
-}
-
-.arrowspan{
-  background: #D4D0C8;
-  border: solid 0.1em;
-  border-color: white grey grey white;
+  padding-top: 3px;
 }
 
 .tabsheader{
@@ -69,3 +68,55 @@
   overflow: hidden;
 }
 
+.selectedTab{
+  margin-top: -3px;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.scrollarrows{
+  display: inline;
+}
+
+.arrowimage{
+  width: 1em;
+  height: .75em;
+}
+
+
+.arrowspan{
+  background: #D4D0C8;
+  border: solid 0.1em;
+  border-color: white grey grey white;
+}
+
+.leftColHeader{
+  background: var(--titleBarColor);
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 0.3em 0.6em 0.1em 0.6em;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.leftColWindow{
+  margin-left: 1px;
+  background: var(--windowsGrey);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  outline: 1px solid var(--titleBarColor);
+  padding: 1px 3px 3px 3px;
+}
+
+.leftColContent{
+  margin-top: 4px;
+  background: var(--leftColContentColor)
+}

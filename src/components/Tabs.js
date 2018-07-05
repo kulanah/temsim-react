@@ -11,17 +11,20 @@ class Tabs extends React.Component{
       startTab: 0,
       leftTabs: [],
       visibleTabs: ['Setup', 'Search', 'Tune', 'TEM'],
-      rightTabs: ['Feg Register', 'EFTEM', 'Dark Field']
+      rightTabs: ['Feg Register', 'EFTEM', 'Dark Field'],
+      selected: 'Setup',
     };
 
     this.incrementArray = this.incrementArray.bind(this);
     this.decrementArray = this.decrementArray.bind(this);
+    this.selectTab = this.selectTab.bind(this);
   }
 
-  componentDidMount(){
-    console.log('left: ' + this.state.leftTabs);
-    console.log('visible: ' + this.state.visibleTabs);
-    console.log('right: ' + this.state.rightTabs);
+  selectTab(event){
+    let newSelected = event.target.textContent;
+    this.setState({
+      selected: newSelected,
+    });
   }
 
   decrementArray(){
@@ -66,14 +69,20 @@ class Tabs extends React.Component{
         <div className='tabBar'>
           <span className='tabs'>
             {this.state.visibleTabs.map(tab =>{
-              return(
-                <span className='tabsheader'>{tab}</span>
-              );
+              if (this.state.selected === tab){
+                return(
+                  <span className='tabsheader button selectedTab'>{tab}</span>
+                );
+              } else {
+                return(
+                  <span onClick={this.selectTab} className='tabsheader button'>{tab}</span>
+                );
+              }
             })}
           </span>
           <span className='scrollarrows'>
-            <span className='arrowspan' onClick={this.decrementArray}><img className='arrowimage' src={leftarrow} alt='Left arrow for tabs scrolling'/></span>
-            <span className='arrowspan' onClick={this.incrementArray}><img className='arrowimage' src={rightarrow} alt='Rightarrow for tabs scrolling'/></span>
+            <span className='arrowspan button' onClick={this.decrementArray}><img className='arrowimage' src={leftarrow} alt='Left arrow for tabs scrolling'/></span>
+            <span className='arrowspan button' onClick={this.incrementArray}><img className='arrowimage' src={rightarrow} alt='Rightarrow for tabs scrolling'/></span>
           </span>
         </div>
       </div>
