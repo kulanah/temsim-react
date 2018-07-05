@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 
 
-import { Tabs } from './components/Tabs';
-import { LeftColumnWindows } from './components/LeftColumnWindows';
+import { LeftColumn } from './components/LeftColumn';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Tabs />
-        <LeftColumnWindows />
+        <LeftColumn />
       </div>
     );
   }
