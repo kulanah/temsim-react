@@ -14,6 +14,8 @@ import vacuummenu from '../img/vacuummenu.png';
 import stage from '../img/stage.png';
 import '../windows.css';
 
+import { VacuumWindow } from './VacuumWindow';
+
 class LeftColumnWindows extends React.Component{
   constructor(){
     super();
@@ -43,6 +45,7 @@ class LeftColumnWindows extends React.Component{
 
           })
         }   */}
+        <VacuumWindow />
       </div>
     );
   }
