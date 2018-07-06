@@ -34,18 +34,16 @@ class LeftColumnWindows extends React.Component{
   }
 
   render(){
-    console.log(this.state.images[0]);
-    // let currentTab = this.state.openTab;
     return(
       <div className='leftcolumnwindowsdiv'>
-        <img src={this.state.images[0].vacuum}/>
+        <VacuumWindow />
+        <img src={this.state.images[0].hightension}/>
         {/* {
           this.state.images[0].map(image => {
             return(<img src={image}/>);
 
           })
         }   */}
-        <VacuumWindow />
       </div>
     );
   }

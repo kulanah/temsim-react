@@ -60,6 +60,7 @@
   font-weight: lighter;
   font-size: 10px;
   margin-left: 0.2em;
+  margin-bottom: 1em;
   padding: 0.3em 0.6em 0.1em 0.6em;
   border-width: 0.75px;
   border-color: #fff #333 transparent #fff; 
@@ -70,11 +71,20 @@
 
 .selectedTab{
   margin-top: -3px;
-}
+  
+};
+.expandBox{
+  background: var(--windowsGrey);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid var(--titleBarColor);
+  border-bottom: 1px solid var(--titleBarColor);
+  box-shadow: 1px 1px black;
+};
 
 .button:hover{
   cursor: pointer;
-}
+};
 
 .scrollarrows{
   display: inline;
@@ -104,6 +114,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 0.3em;
 }
 
 .leftColWindow{
@@ -113,10 +124,31 @@
   border-left: 1px solid white;
   border-right: 1px solid white;
   outline: 1px solid var(--titleBarColor);
-  padding: 1px 3px 3px 3px;
+  padding: 1px 4px 7px 4px;
 }
 
 .leftColContent{
   margin-top: 4px;
-  background: var(--leftColContentColor)
+  background: var(--leftColContentColor);
+  display: flex;
+  padding: 0 3% 0 3%;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--titleBarColor);
+  box-shadow: 1px 1px white;
+}
+
+.windowsButton{
+  background: var(--windowsGrey);
+  outline: 1px solid black;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid (--titleBarColor);
+  border-bottom: 1px solid (--titleBarColor);
+
+}
+
+.leftAlignRow{
+  display: flex;
 }
