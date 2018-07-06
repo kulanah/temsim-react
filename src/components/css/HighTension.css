@@ -1,0 +1,25 @@
+.highTensionArrow{
+  height: 1em;
+  width: 1em;
+}
+
+#highTensionButton{
+  background: #ffff80;
+  height: 2em;
+}
+
+#freeHighTensionRow{
+  display: flex;
+}
+
+.flexRow{
+  display:flex;
+}
+
+#emptyLine{
+  height: 1px;
+  width: 56%;
+  flex: 1;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}

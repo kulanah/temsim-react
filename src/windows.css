@@ -150,6 +150,15 @@
   font-size: 11px;
 }
 
+.windowsSelect{
+  border: 1px solid black;
+  background: white;
+}
+
+.contentRow{
+  margin-bottom: 2em;
+}
+
 .leftAlignRow{
   display: flex;
 }

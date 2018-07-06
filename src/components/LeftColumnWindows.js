@@ -15,6 +15,7 @@ import stage from '../img/stage.png';
 import '../windows.css';
 
 import { VacuumWindow } from './VacuumWindow';
+import { HighTension } from './HighTension';
 
 class LeftColumnWindows extends React.Component{
   constructor(){
@@ -37,6 +38,7 @@ class LeftColumnWindows extends React.Component{
     return(
       <div className='leftcolumnwindowsdiv'>
         <VacuumWindow />
+        <HighTension />
         <img src={this.state.images[0].hightension}/>
         {/* {
           this.state.images[0].map(image => {
