@@ -15,7 +15,9 @@ import stage from '../img/stage.png';
 import '../windows.css';
 
 import { VacuumWindow } from './VacuumWindow';
+import { FegControl } from './FegControl';
 import { HighTension } from './HighTension';
+import { LeftColFiller } from './LeftColFiller';
 
 class LeftColumnWindows extends React.Component{
   constructor(){
@@ -36,16 +38,11 @@ class LeftColumnWindows extends React.Component{
 
   render(){
     return(
-      <div className='leftcolumnwindowsdiv'>
+      <div className='leftColWindowsDiv'>
         <VacuumWindow />
         <HighTension />
-        <img src={this.state.images[0].hightension}/>
-        {/* {
-          this.state.images[0].map(image => {
-            return(<img src={image}/>);
-
-          })
-        }   */}
+        <FegControl />
+        <LeftColFiller />
       </div>
     );
   }
