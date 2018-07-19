@@ -1,7 +1,5 @@
 import React from 'react';
 import '../windows.css';
-import leftarrow from '../img/leftarrow.svg';
-import rightarrow from '../img/rightarrow.svg';
 import downarrow from '../img/downarrow.svg';
 import uparrow from '../img/uparrow.svg';
 import enterbutton from '../img/enterbutton.svg';
