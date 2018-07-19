@@ -71,8 +71,8 @@
 
 .selectedTab{
   margin-top: -3px;
-  
-};
+}
+
 .expandBox{
   background: var(--windowsGrey);
   border-top: 1px solid white;
@@ -80,11 +80,24 @@
   border-right: 1px solid var(--titleBarColor);
   border-bottom: 1px solid var(--titleBarColor);
   box-shadow: 1px 1px black;
-};
+}
+
+.expandBox:active{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px inset var(--titleBarColor);
+  border-top: 1px inset var(--titleBarColor);
+}
+
+.expandBox:active *{
+  transform: translate(1px, 1px);
+}
+
+*:focus{ outline: 0;}
 
 .button:hover{
   cursor: pointer;
-};
+}
 
 .scrollarrows{
   display: inline;
@@ -148,6 +161,7 @@
   border-right: 1px solid (--titleBarColor);
   border-bottom: 1px solid (--titleBarColor);
   font-size: 11px;
+  padding: 0 2px 0 2px;
 }
 
 .windowsSelect{
@@ -156,9 +170,34 @@
 }
 
 .contentRow{
+  display: flex;
   margin-bottom: 2em;
 }
 
 .leftAlignRow{
   display: flex;
+}
+
+.stackedButtons{
+  margin-left: 5px;
+  display:flex;
+  flex-direction: column;
+  width: 1em;
+}
+
+.contentRowText{
+  margin-left: 5px;
+  padding-top: 0;
+  margin-top: 0.4em;
+}
+
+.stackedButtons > button{
+  height: 10px;
+  width: 16px;
+  font-size: 0px;
+}
+
+.leftColFiller{
+  height: auto;
+  background: var(--windowsGrey);
 }
