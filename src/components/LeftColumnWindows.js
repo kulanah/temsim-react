@@ -3,11 +3,10 @@ import '../windows.css';
 import { SetupTab } from './SetupTab';
 import { SearchTab } from './SearchTab';
 class LeftColumnWindows extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
     this.state = {
-      openTab: 0,
       tabs: [<SetupTab />, <SearchTab />]
     };
   }
@@ -15,7 +14,7 @@ class LeftColumnWindows extends React.Component{
   render(){
     return(
       this.state.tabs.map((tabCol, i) => {
-        if (this.state.openTab === i){
+        if (this.props.selectedTab === i){
           return tabCol;
         }
       })

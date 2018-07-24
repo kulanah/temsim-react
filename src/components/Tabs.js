@@ -21,10 +21,12 @@ class Tabs extends React.Component{
   }
 
   selectTab(event){
-    let newSelected = event.target.id;
+    let newSelected = Number(event.target.id);
     this.setState({
-      selected: Number(newSelected),
+      selected: newSelected,
     });
+
+    this.props.selectTab(newSelected);
   }
 
   decrementArray(){
