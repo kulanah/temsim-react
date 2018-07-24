@@ -1,13 +1,14 @@
 import React from 'react';
 
 import { LeftColFiller } from './LeftColFiller';
+import { StageSquared } from './StageSquared';
+import { BeamSettings } from './BeamSettings';
 
 const SearchTab = () =>{
   return (
     <div className='leftColWindowsDiv'>
-      {/* <VacuumWindow />
-      <HighTension />
-      <FegControl /> */}
+      <StageSquared />
+      <BeamSettings />
       <LeftColFiller />
     </div>
   );
