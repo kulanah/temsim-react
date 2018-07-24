@@ -26,7 +26,7 @@ class StartMenu extends React.Component{
   render(){
     return(
       <div id='startMenuDiv'>
-        <div id='startButton' class='taskBarButton'>
+        <div id='startButton' className='taskBarButton'>
           <span><img className='taskBarIcon' src={startIcon} alt=''/></span>
           <span className='windowsText bold'> Start</span>
         </div>
