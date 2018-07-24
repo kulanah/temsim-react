@@ -4,6 +4,7 @@ import './App.css';
 
 import { LeftColumn } from './components/LeftColumn';
 import { StartMenu } from './components/StartMenu';
+import { ExternalButtons } from './components/ExternalButtons';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <LeftColumn />
         <StartMenu />
+        <ExternalButtons />
       </div>
     );
   }
