@@ -1,28 +1,24 @@
 import React from 'react';
 import '../windows.css';
-
-import { VacuumWindow } from './VacuumWindow';
-import { FegControl } from './FegControl';
-import { HighTension } from './HighTension';
-import { LeftColFiller } from './LeftColFiller';
-
+import { SetupTab } from './SetupTab';
+import { SearchTab } from './SearchTab';
 class LeftColumnWindows extends React.Component{
   constructor(){
     super();
 
     this.state = {
-      openTab: 0
+      openTab: 0,
+      tabs: [<SetupTab />, <SearchTab />]
     };
   }
 
   render(){
     return(
-      <div className='leftColWindowsDiv'>
-        <VacuumWindow />
-        <HighTension />
-        <FegControl />
-        <LeftColFiller />
-      </div>
+      this.state.tabs.map((tabCol, i) => {
+        if (this.state.openTab === i){
+          return tabCol;
+        }
+      })
     );
   }
 }
