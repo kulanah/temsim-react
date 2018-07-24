@@ -214,3 +214,11 @@
   padding-left: 10px;
   outline: 1px solid var(--leftColContentColor)
 }
+
+.windowsText{
+  font-family: helvetica, ms-sans, sans-serif;
+}
+
+.bold{
+  font-weight: bold;
+}
