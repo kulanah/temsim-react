@@ -10,9 +10,9 @@ class Tabs extends React.Component{
     this.state = {
       startTab: 0,
       leftTabs: [],
-      visibleTabs: ['Setup', 'Search', 'Tune', 'TEM'],
-      rightTabs: ['Feg Register', 'EFTEM', 'Dark Field'],
-      selected: 'Setup',
+      visibleTabs: [{name: 'Setup', id: 0}, {name: 'Search', id: 1}, {name: 'Tune', id: 2}, {name: 'TEM', id: 3}],
+      rightTabs: [{name: 'Feg Register', id: 4}, {name: 'EFTEM', id: 5}, {name: 'Dark Field', id: 5}],
+      selected: 0,
     };
 
     this.incrementArray = this.incrementArray.bind(this);
@@ -21,9 +21,9 @@ class Tabs extends React.Component{
   }
 
   selectTab(event){
-    let newSelected = event.target.textContent;
+    let newSelected = event.target.id;
     this.setState({
-      selected: newSelected,
+      selected: Number(newSelected),
     });
   }
 
@@ -69,13 +69,13 @@ class Tabs extends React.Component{
         <div className='tabBar'>
           <span className='tabs'>
             {this.state.visibleTabs.map(tab =>{
-              if (this.state.selected === tab){
+              if (this.state.selected === tab.id){
                 return(
-                  <span className='tabsheader button selectedTab'>{tab}</span>
+                  <span id={tab.id} className='tabsheader button selectedTab'>{tab.name}</span>
                 );
               } else {
                 return(
-                  <span onClick={this.selectTab} className='tabsheader button'>{tab}</span>
+                  <span id={tab.id} onClick={this.selectTab} className='tabsheader button'>{tab.name}</span>
                 );
               }
             })}
