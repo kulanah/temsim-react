@@ -56,6 +56,21 @@
   box-shadow: 1px 1px 0 #404040;
 }
 
+.taskBarButton:hover{
+  cursor: pointer;
+}
+
+.taskBarButton:active{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid var(--titleBarColor);
+  border-top: 1px solid var(--titleBarColor);
+
+  transform: translate(1px, 2px);
+  background: #E9E7E3;
+  box-shadow: -1px -1px 0 #404040;
+}
+
 .windowsTask{
   display: flex;
   min-width: 12%;
