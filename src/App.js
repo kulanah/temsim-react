@@ -5,6 +5,7 @@ import './App.css';
 import { LeftColumn } from './components/LeftColumn/LeftColumn';
 import { StartMenu } from './components/StartMenu';
 import { ExternalButtons } from './components/ExternalButtons';
+import { TEMUIBar } from './components/DigitalMicrograph/TEMUIBar';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <LeftColumn />
         <StartMenu />
         <ExternalButtons />
+        <TEMUIBar/>
       </div>
     );
   }
