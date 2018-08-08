@@ -31,6 +31,8 @@
 }
 
 .titleBar{
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   background: linear-gradient(to right, #808080 40%, #C0C0C0);
   color: var(--windowsGrey);
