@@ -3,7 +3,7 @@ import './css/StartMenu.css';
 import 'windows.css';
 
 import startIcon from 'img/windowsStartImage.png';
-import icon from 'img/icon.png';
+import icon from 'img/temuiicon.png';
 import icon2 from 'img/icon2.png';
 
 class StartMenu extends React.Component{
