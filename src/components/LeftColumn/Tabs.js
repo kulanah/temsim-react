@@ -10,7 +10,7 @@ class Tabs extends React.Component{
     this.state = {
       startTab: 0,
       leftTabs: [],
-      visibleTabs: [{name: 'Setup', id: 0}, {name: 'Search', id: 1}, {name: 'Tune', id: 2}, {name: 'TEM', id: 3}],
+      visibleTabs: [{name: 'Setup', id: 0}, {name: 'Search', id: 1}, {name: 'Tune', id: 2}, {name: 'STEM', id: 3}],
       rightTabs: [{name: 'Feg Register', id: 4}, {name: 'EFTEM', id: 5}, {name: 'Dark Field', id: 6}],
       selected: 0,
     };
