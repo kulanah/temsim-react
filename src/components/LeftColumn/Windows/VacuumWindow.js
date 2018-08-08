@@ -28,14 +28,14 @@ class VacuumWindow extends React.Component{
   }
 
   displayButton(){
-    if (this.state.selectedButton == 'valves'){
+    if (this.state.selectedButton === 'valves'){
       return(
         <div className='leftAlignRow'>
           <button className='windowsButton vacuumButton selectedButton' onClick={this.selectValves}>Col. Valves Closed</button>
           <button className='windowsButton vacuumButton' onClick={this.selectTurbo}>Turbo On</button>
         </div>
       );
-    } else if(this.state.selectedButton == 'turbo'){
+    } else if(this.state.selectedButton === 'turbo'){
       return(
         <div className='leftAlignRow'>
           <button className='windowsButton vacuumButton' onClick={this.selectValves}>Col. Valves Closed</button>
