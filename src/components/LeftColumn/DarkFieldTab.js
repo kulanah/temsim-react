@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { DarkField } from './DarkField';
-import { Holography } from './Holography';
-import { LeftColFiller } from './LeftColFiller';
+import { DarkField } from './Windows/DarkField';
+import { Holography } from './Windows/Holography';
+import { LeftColFiller } from './Windows/LeftColFiller';
 
 const DarkFieldTab = () =>{
   return (

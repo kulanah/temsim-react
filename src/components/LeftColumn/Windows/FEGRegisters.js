@@ -1,14 +1,14 @@
 import React from 'react';
 
-import expandImg from '../img/expandArrow.png';
-import '../windows.css';
+import expandImg from 'img/expandArrow.png';
+import 'windows.css';
 
-class STEMDetectorUser extends React.Component{
+class FEGRegisters extends React.Component{
   render(){
     return(
       <div className='leftColWindow'>
         <div className='leftColHeader'>
-          STEM Detector (User) 
+          FEG Registers
           <span className='leftColExpand'>
             <button className='expandBox'><img src={expandImg} alt='' /></button>
           </span>
@@ -21,4 +21,4 @@ class STEMDetectorUser extends React.Component{
   }
 }
 
-export { STEMDetectorUser };
+export { FEGRegisters };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { VacuumWindow } from './VacuumWindow';
-import { FegControl } from './FegControl';
-import { HighTension } from './HighTension';
-import { LeftColFiller } from './LeftColFiller';
+import { VacuumWindow } from './Windows/VacuumWindow';
+import { FegControl } from './Windows/FegControl';
+import { HighTension } from './Windows/HighTension';
+import { LeftColFiller } from './Windows/LeftColFiller';
 
 
 const SetupTab = () =>{

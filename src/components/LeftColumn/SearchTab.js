@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { LeftColFiller } from './LeftColFiller';
-import { StageSquared } from './StageSquared';
-import { BeamSettings } from './BeamSettings';
+import { LeftColFiller } from './Windows/LeftColFiller';
+import { StageSquared } from './Windows/StageSquared';
+import { BeamSettings } from './Windows/BeamSettings';
 
 const SearchTab = () =>{
   return (

@@ -1,15 +1,14 @@
-
 import React from 'react';
 
-import '../windows.css';
-import expandImg from '../img/expandArrow.png';
+import expandImg from 'img/expandArrow.png';
+import 'windows.css';
 
-class BeamSettings extends React.Component{
+class StageSquared extends React.Component{
   render(){
     return(
       <div className='leftColWindow'>
         <div className='leftColHeader'>
-         Beam Settings 
+          Stage²
           <span className='leftColExpand'>
             <button className='expandBox'><img src={expandImg} alt='' /></button>
           </span>
@@ -20,7 +19,6 @@ class BeamSettings extends React.Component{
       </div>
     );
   }
-
 }
 
-export { BeamSettings };
+export { StageSquared };

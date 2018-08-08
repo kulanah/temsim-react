@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { LeftColFiller } from './LeftColFiller';
-import { Stigmator } from './Stigmator';
-import { Alignments } from './Alignments';
+import { LeftColFiller } from './Windows/LeftColFiller';
+import { Stigmator } from './Windows/Stigmator';
+import { Alignments } from './Windows/Alignments';
 
 const TuneTab = () =>{
   return (

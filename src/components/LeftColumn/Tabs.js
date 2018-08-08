@@ -1,7 +1,7 @@
 import React from 'react';
-import leftarrow from '../img/leftarrow.svg';
-import rightarrow from '../img/rightarrow.svg';
-import '../windows.css';
+import leftarrow from 'img/leftarrow.svg';
+import rightarrow from 'img/rightarrow.svg';
+import 'windows.css';
 
 class Tabs extends React.Component{
   constructor(){

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Filter } from './Filter';
-import { PEELS } from './PEELS';
-import { LeftColFiller } from './LeftColFiller';
-import { Stigmator } from './Stigmator';
+import { Filter } from './Windows/Filter';
+import { PEELS } from './Windows/PEELS';
+import { LeftColFiller } from './Windows/LeftColFiller';
+import { Stigmator } from './Windows/Stigmator';
 
 const EFTEMTab = () =>{
   return (

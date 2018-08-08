@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { FEGRegisters } from './FEGRegisters';
-import { LeftColFiller } from './LeftColFiller';
-import { Alignments } from './Alignments';
+import { FEGRegisters } from './Windows/FEGRegisters';
+import { LeftColFiller } from './Windows/LeftColFiller';
+import { Alignments } from './Windows/Alignments';
 
 const FEGRegisterTab = () =>{
   return (

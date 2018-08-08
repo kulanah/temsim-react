@@ -1,14 +1,14 @@
 import React from 'react';
 
-import expandImg from '../img/expandArrow.png';
-import '../windows.css';
+import expandImg from 'img/expandArrow.png';
+import 'windows.css';
 
-class Alignments extends React.Component{
+class Filter extends React.Component{
   render(){
     return(
       <div className='leftColWindow'>
         <div className='leftColHeader'>
-          Alignments 
+          Filter
           <span className='leftColExpand'>
             <button className='expandBox'><img src={expandImg} alt='' /></button>
           </span>
@@ -21,4 +21,4 @@ class Alignments extends React.Component{
   }
 }
 
-export { Alignments };
+export { Filter };

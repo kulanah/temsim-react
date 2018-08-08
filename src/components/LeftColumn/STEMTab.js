@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { STEMImagingExpert } from './STEMImagingExpert';
-import { STEMDetectorUser } from './STEMDetectorUser';
-import { DirectAlignments } from './DirectAlignments';
-import { LeftColFiller } from './LeftColFiller';
+import { STEMImagingExpert } from './Windows/STEMImagingExpert';
+import { STEMDetectorUser } from './Windows/STEMDetectorUser';
+import { DirectAlignments } from './Windows/DirectAlignments';
+import { LeftColFiller } from './Windows/LeftColFiller';
 
 
 const STEMTab = () =>{

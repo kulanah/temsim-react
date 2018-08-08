@@ -1,7 +1,7 @@
 import React from 'react';
-import '../windows.css';
-import './css/VacuumWindow.css';
-import expandImg from '../img/expandArrow.png';
+import 'windows.css';
+import 'components/css/VacuumWindow.css';
+import expandImg from 'img/expandArrow.png';
 
 class VacuumWindow extends React.Component{
   constructor(){

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../windows.css';
+import '../../windows.css';
 
 import { Tabs } from './Tabs';
 import { LeftColumnWindows } from './LeftColumnWindows';

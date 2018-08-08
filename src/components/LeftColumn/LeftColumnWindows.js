@@ -1,5 +1,5 @@
 import React from 'react';
-import '../windows.css';
+import 'windows.css';
 import { SetupTab } from './SetupTab';
 import { SearchTab } from './SearchTab';
 import { TuneTab } from './TuneTab';

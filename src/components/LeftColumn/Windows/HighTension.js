@@ -1,9 +1,9 @@
 import React from 'react';
-import '../windows.css';
-import leftarrow from '../img/leftarrow.svg';
-import rightarrow from '../img/rightarrow.svg';
-import './css/HighTension.css';
-import expandImg from '../img/expandArrow.png';
+import 'windows.css';
+import leftarrow from 'img/leftarrow.svg';
+import rightarrow from 'img/rightarrow.svg';
+import 'components/css/HighTension.css';
+import expandImg from 'img/expandArrow.png';
 
 class HighTension extends React.Component{
   constructor(){

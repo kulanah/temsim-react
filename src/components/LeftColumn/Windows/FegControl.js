@@ -1,10 +1,10 @@
 import React from 'react';
-import '../windows.css';
-import downarrow from '../img/downarrow.svg';
-import uparrow from '../img/uparrow.svg';
-import enterbutton from '../img/enterbutton.svg';
-import expandImg from '../img/expandArrow.png';
-import './css/FegControl.css';
+import 'windows.css';
+import downarrow from 'img/downarrow.svg';
+import uparrow from 'img/uparrow.svg';
+import enterbutton from 'img/enterbutton.svg';
+import expandImg from 'img/expandArrow.png';
+import 'components/css/FegControl.css';
 
 class FegControl extends React.Component{
   constructor(){

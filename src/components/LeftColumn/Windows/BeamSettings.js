@@ -1,15 +1,15 @@
 
 import React from 'react';
 
-import expandImg from '../img/expandArrow.png';
-import '../windows.css';
+import 'windows.css';
+import expandImg from 'img/expandArrow.png';
 
-class Filter extends React.Component{
+class BeamSettings extends React.Component{
   render(){
     return(
       <div className='leftColWindow'>
         <div className='leftColHeader'>
-          Filter
+         Beam Settings 
           <span className='leftColExpand'>
             <button className='expandBox'><img src={expandImg} alt='' /></button>
           </span>
@@ -20,6 +20,7 @@ class Filter extends React.Component{
       </div>
     );
   }
+
 }
 
-export { Filter };
+export { BeamSettings };

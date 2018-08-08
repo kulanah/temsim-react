@@ -1,7 +1,7 @@
 import React from 'react';
 
-import expandImg from '../img/expandArrow.png';
-import '../windows.css';
+import expandImg from 'img/expandArrow.png';
+import 'windows.css';
 
 class DarkField extends React.Component{
   render(){

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import expandImg from '../img/expandArrow.png';
-import '../windows.css';
+import expandImg from 'img/expandArrow.png';
+import 'windows.css';
 
 class STEMImagingExpert extends React.Component{
   render(){
