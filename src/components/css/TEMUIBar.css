@@ -1,8 +1,5 @@
 .temUiBar{
-  position: absolute;
-  top: 0;
-  left: 15%;
-  width: 85vw;
+  width: 99%;
 
   background: var(--windowsGrey);
   padding: 3px;
