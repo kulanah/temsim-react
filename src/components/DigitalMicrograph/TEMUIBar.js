@@ -14,6 +14,11 @@ const TEMUIBar = () => {
         </span>
         <span>_ O X</span>
       </div>
+      <div className='fileMenuBar windowsText'>
+        <span className='fileMenuBarButton disabled'>File</span>
+        <span className='fileMenuBarButton disabled'>Mode</span>
+        <span className='fileMenuBarButton disabled'>Help</span>
+      </div>
     </div>
   );
 };

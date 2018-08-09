@@ -3,4 +3,13 @@
   top: 0;
   left: 15%;
   width: 85vw;
+
+  background: var(--windowsGrey);
+  padding: 3px;
+
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 2px solid var(--titleBarColor);
+  border-bottom: 2px solid var(--titleBarColor);
+  box-sizing: border-box;
 }

@@ -18,6 +18,7 @@
   height: 97%;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid black; */
 }
 
 .tabsdiv{
@@ -39,7 +40,8 @@
   width: 100%;
   text-align: left;
   padding-left: 0.4em;
-  padding-top: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   font-weight: 800;
   font-size: 15px;
 }
@@ -76,6 +78,24 @@
 
 .selectedTab{
   margin-top: -3px;
+}
+
+.fileMenuBar{
+  background: var(--windowsGrey);
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 4px 0 4px 5px;
+}
+
+.fileMenuBarButton{
+  margin-right: 1.5em;
+}
+
+.disabled{
+  text-shadow: 1px 1px #fffbf0;
+  color: #808080;
 }
 
 .expandBox{
