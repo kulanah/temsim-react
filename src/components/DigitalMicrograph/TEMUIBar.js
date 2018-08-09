@@ -4,6 +4,8 @@ import 'windows.css';
 import 'components/css/TEMUIBar.css';
 import temicon from 'img/temuiicon.png';
 
+import { MinMaxCloseButtons } from 'components/MinMaxCloseButtons';
+
 const TEMUIBar = () => {
   return(
     <div className='temUiBar'>
@@ -12,7 +14,7 @@ const TEMUIBar = () => {
           <span><img src={temicon} alt=''/></span>
           <span>TEM User Interface</span>
         </span>
-        <span>_ O X</span>
+        <MinMaxCloseButtons />
       </div>
       <div className='fileMenuBar windowsText'>
         <span className='fileMenuBarButton disabled'>File</span>
