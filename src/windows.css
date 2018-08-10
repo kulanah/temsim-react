@@ -11,14 +11,63 @@
 }
 
 .leftCol{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 15vw;
-  height: 97%;
+  grid-column-start: 1;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 96;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+#startMenuDiv{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  
+  grid-row-start: 94;
+  grid-row-end: 98;
+  
+  display:flex;
+  justify-content: flex-start;
+  align-content: baseline;
+
+  background: var(--windowsGrey);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid var(--titleBarColor);
+  border-bottom: 1px solid var(--titleBarColor);
+
+  padding-top: 4px;
+}
+
+.externalButtonsDiv{
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  grid-row-start: 98;
+  grid-row-end: -1;
+
+  height: 2%;
+
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.digitalMicrographDiv{
+  grid-column-start: 16;
+  grid-column-end: -1;
+
+  grid-row-start: 1;
+  grid-row-end: 92;
+  left: 15%;
+  width: 85vw;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
 }
 
 .tabsdiv{
