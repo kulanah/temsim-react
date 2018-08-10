@@ -1,9 +1,10 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template: repeat(100, 1%) / repeat(100, 1%);
+  grid-template: repeat(100, 1fr) / repeat(100, 1fr);
   min-height: 100vh;
   min-width: 100vw;
+  overflow: hidden;
 }
 
 .tabs{
