@@ -302,3 +302,7 @@
 .bold{
   font-weight: bold;
 }
+
+.titleBarIcon{
+  margin-right: 3px;
+}
