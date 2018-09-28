@@ -323,3 +323,97 @@
 .titleBarIcon{
   margin-right: 3px;
 }
+
+.windowspopuptitlespan {
+  height: 19px;
+}
+
+.windowspopuptitle {
+  display: inline;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.windowspopupheader {
+  background: linear-gradient(to left, #A6CAF0, #0A246A);
+  font-size: 14px;
+  color: white;
+  margin: 3px 3px 3px 3px;
+  text-align: center;
+  vertical-align: middle;
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contentheader {
+  position: relative;
+  display: inline-block;
+  left: 1em;
+  top: 0.5em;
+  background: #D4D0C8;
+  height: 0.8em;
+}
+
+.windowspopupcontent {
+  border: 1px solid #808080;
+  margin: 1px 5px 5px 5px;
+  padding: 3px 3% 3px 3%;
+  width: 90%;
+  box-shadow: 1px 1px white, inset 1px 1px white;
+}
+
+.windowspopuphalfcontent {
+  border: 1px solid #808080;
+  margin: 1px 5px 5px 5px;
+  padding: 3px 3% 3px 3%;
+  width: 87%;
+  box-shadow: 1px 1px white, inset 1px 1px white;
+}
+
+.windowspopuptwocolbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.windowspopupbox {
+  width: 100%;
+  line-height: 1em;
+}
+.windowspopupcontent:nth-child(2) {
+  padding-top: 9px;
+}
+
+.windowspopuphalfcontent:nth-child(2) {
+  padding-top: 9px;
+}
+.windowspopuprowrightalign {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+}
+.windowspopuprowrightalign * {
+  margin-left: 5px;
+}
+
+.windowspopuprow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.windowspopuptwocol {
+  width: 49.5%;
+}
+
+.windowspopuprowcentered {
+  display: flex;
+  margin-bottom: 2px;
+  justify-content: center;
+}
+
+.windowspopupbox select {
+  background: white;
+  border: 1px solid #808080;
+}
