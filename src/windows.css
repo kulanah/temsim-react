@@ -135,11 +135,28 @@
   font-size: 12px;
   display: flex;
   justify-content: flex-start;
-  padding: 4px 0 4px 5px;
 }
 
 .fileMenuBarButton{
-  margin-right: 1.5em;
+  margin-bottom: 0;
+  padding: 5px 5px 3px 5px;
+}
+
+/* .fileMenuBarButton:hover{
+  background: blue;
+  color: white;
+} */
+
+.fileMenuBarButton:active{
+  border-top: 1px solid var(--titleBarColor);
+  border-left: 1px solid var(--titleBarColor);
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  padding: 4px 4px 0px 4px;
+  margin: 1px 0 1px 0;
+  background: var(--windowsGrey);
+  /* background: #e6e6eb;  */
+  color: black;
 }
 
 .disabled{
