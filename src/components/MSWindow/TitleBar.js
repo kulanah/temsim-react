@@ -4,7 +4,6 @@ import 'windows.css';
 import { MinMaxCloseButtons } from 'components/MinMaxCloseButtons';
 
 const TitleBar = (props) => {
-  console.log(props);
   return(
     <div className='titleBar'>
       <span>
