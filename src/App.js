@@ -5,7 +5,7 @@ import './App.css';
 import { LeftColumn } from './components/LeftColumn/LeftColumn';
 import { StartMenu } from './components/StartMenu';
 import { ExternalButtons } from './components/ExternalButtons';
-import { DigitalMicrograph } from './components/DigitalMicrograph/DigitalMicrograph';
+import { DMWindow } from './components/DigitalMicrograph/DMWindow';
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <LeftColumn />
         <StartMenu />
         <ExternalButtons />
-        <DigitalMicrograph/>
+        <DMWindow />
       </div>
     );
   }
