@@ -28,13 +28,13 @@ class FileMenuBar extends React.Component{
   createFileButtons(){
     if (this.props){
       let buttons = [...this.props.data].map((menuButton, index) => {
-        return <FileMenuButton onClick={this.selectButton} active={this.state.active} {...menuButton} />;
+        return <FileMenuButton key={index} onClick={this.selectButton} active={this.state.active} {...menuButton} />;
       });
       return buttons;
     } else {
       return null;
     }
-  };
+  }
 
   render(){
     return(
@@ -43,6 +43,6 @@ class FileMenuBar extends React.Component{
       </div>
     );
   }
-};
+}
 
 export { FileMenuBar };

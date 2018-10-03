@@ -33,7 +33,7 @@ class StartMenu extends React.Component{
         <span id='startMenuSeparator'>  </span>
         {this.state.openWindows.map((item) => {
           return(
-            <div className='taskBarButton windowsTask'>
+            <div key={item.name} className='taskBarButton windowsTask'>
               <img className='taskBarIcon' src={item.icon} alt=''/>
               <span className='windowsText'>
                 {item.name}
