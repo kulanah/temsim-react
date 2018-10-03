@@ -1,9 +1,9 @@
 import React from 'react';
 
 import 'windows.css';
-// import 'components/css/DigitalMicrograph.css';
 import icon from 'img/icon.png';
 import { Window } from '../MSWindow/Window';
+import { DMContent } from './DMContent';
 
 class DMWindow extends React.Component{
   constructor(props){
@@ -48,9 +48,8 @@ class DMWindow extends React.Component{
   createWindow(){
     let titleBar = {title: 'Digital Micrograph', icon: icon};
     let fileBar = this.createFileBar();
-    return <Window titleBar={titleBar} fileBar={fileBar}/>;
-    // return <Window titleBar={titleBar} />;
-
+    let content = <DMContent />;
+    return <Window content={content} titleBar={titleBar} fileBar={fileBar}/>;
   }
 
   render(){
