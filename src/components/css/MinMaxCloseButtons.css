@@ -12,6 +12,9 @@
   width: 1em;
   height: 1.2em;
 }
+.minMaxCloseButton:active{
+  margin-left: 1.1em;
+}
 
 .minMaxCloseButtonImg{
   height: 1.5em;
