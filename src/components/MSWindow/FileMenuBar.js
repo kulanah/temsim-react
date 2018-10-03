@@ -14,7 +14,7 @@ class FileMenuBar extends React.Component{
     this.selectButton = this.selectButton.bind(this);
     this.deselectMenu = this.deselectMenu.bind(this);
     this.createFileButtons = this.createFileButtons.bind(this);
-
+    this.hoverButton = this.hoverButton.bind(this);
   }
 
   selectButton(title){
@@ -25,10 +25,16 @@ class FileMenuBar extends React.Component{
     this.setState({active: null});
   }
 
+  hoverButton(event){
+    if (this.state.active !== null){
+      this.setState({active: event});
+    }
+  }
+
   createFileButtons(){
     if (this.props){
       let buttons = [...this.props.data].map((menuButton, index) => {
-        return <FileMenuButton key={index} onClick={this.selectButton} active={this.state.active} {...menuButton} />;
+        return <FileMenuButton key={index} onMouseOver={this.hoverButton} onClick={this.selectButton} active={this.state.active} {...menuButton} />;
       });
       return buttons;
     } else {

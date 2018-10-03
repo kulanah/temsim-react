@@ -15,6 +15,7 @@ class FileMenuButton extends React.Component{
     this.clickItem = this.clickItem.bind(this);
     this.disablePopup = this.disablePopup.bind(this);
     this.showHeader = this.showHeader.bind(this);
+    this.onMouseOver = this.onMouseOver.bind(this);
   }
 
   showMenu(){
@@ -39,11 +40,15 @@ class FileMenuButton extends React.Component{
     this.showHeader();
   }
 
+  onMouseOver(){
+    this.props.onMouseOver(this.props.header);
+  }
+
   showHeader(){
     if (this.props.active === this.props.header){
-      return <div className='fileMenuBarButtonSelected' onClick={this.clickItem}>{this.props.header}</div>;
+      return <div className='fileMenuBarButtonSelected' onMouseOver={this.onMouseOver}  onClick={this.clickItem}>{this.props.header}</div>;
     } else {
-      return <div className='fileMenuBarButton' onClick={this.clickItem}>{this.props.header}</div>;
+      return <div className='fileMenuBarButton' onMouseOver={this.onMouseOver}  onClick={this.clickItem}>{this.props.header}</div>;
     }
   }
 
