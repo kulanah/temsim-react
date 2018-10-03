@@ -5,7 +5,7 @@ import 'windows.css';
 
 const Popup = (props) => {
   return (
-    <div className='testDiv'> ISSA POPUP </div>
+    <div className='testDiv'> {props.text} </div>
   );
 };
 
