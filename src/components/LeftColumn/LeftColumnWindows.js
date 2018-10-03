@@ -21,6 +21,8 @@ class LeftColumnWindows extends React.Component{
       this.state.tabs.map((tabCol, i) => {
         if (this.props.selectedTab === i){
           return tabCol;
+        } else { 
+          return null;
         }
       })
     );

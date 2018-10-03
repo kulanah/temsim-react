@@ -7,10 +7,6 @@ import expandImg from 'img/expandArrow.png';
 import 'components/css/FegControl.css';
 
 class FegControl extends React.Component{
-  constructor(){
-    super();
-  }
-
   render(){
     return(
       <div className='leftColWindow'>

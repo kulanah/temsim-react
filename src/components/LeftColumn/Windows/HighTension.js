@@ -6,10 +6,6 @@ import 'components/css/HighTension.css';
 import expandImg from 'img/expandArrow.png';
 
 class HighTension extends React.Component{
-  constructor(){
-    super();
-  }
-
   render(){
     return(
       <div className='leftColWindow'>
