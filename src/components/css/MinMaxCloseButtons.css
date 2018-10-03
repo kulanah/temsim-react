@@ -1,13 +1,19 @@
 .minMaxCloseButtonsDiv{
   display: flex;
   flex-direction: row;
+  margin-right: 1em;
 }
 
 .minMaxCloseButton{
   margin-left: 1em;
+  margin-top: 0.25em;
   color: black;
   background: var(--windowsGrey);
-  width: 1.5em;
+  width: 1em;
+  height: 1.2em;
+}
+
+.minMaxCloseButtonImg{
   height: 1.5em;
 }
 

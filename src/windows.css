@@ -10,6 +10,10 @@
   --leftColContentColor: #FFFBF0;
 }
 
+body{
+  background: var(--windowsGrey);
+}
+
 .leftCol{
   grid-column-start: 1;
   grid-column-end: 16;
@@ -92,7 +96,8 @@
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 12px;
+  margin: 2px;
 }
 
 .tabBar{
@@ -139,7 +144,7 @@
 
 .fileMenuBarButton{
   margin-bottom: 0;
-  padding: 5px 5px 3px 5px;
+  padding: 1px 5px 2px 5px;
 }
 
 .fileMenuBarButtonSelected{
@@ -147,8 +152,8 @@
   border-left: 1px solid var(--titleBarColor);
   border-bottom: 1px solid white;
   border-right: 1px solid white;
-  padding: 4px 4px 0px 4px;
-  margin: 1px 0 1px 0;
+  padding: 2px 4px 0px 4px;
+  margin: 0px 0 -2px 0;
   background: var(--windowsGrey);
   /* background: #e6e6eb;  */
   color: black;
@@ -158,18 +163,6 @@
   background: blue;
   color: white;
 } */
-
-.fileMenuBarButton:active{
-  border-top: 1px solid var(--titleBarColor);
-  border-left: 1px solid var(--titleBarColor);
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  padding: 4px 4px 0px 4px;
-  margin: 1px 0 1px 0;
-  background: var(--windowsGrey);
-  /* background: #e6e6eb;  */
-  color: black;
-}
 
 .disabled{
   text-shadow: 1px 1px #fffbf0;
@@ -441,5 +434,7 @@
   height: 100%;
   display: flex; 
   flex-direction: column;
-
+  background: var(--windowsGrey);
+  margin: 2px;
+  border: 1px solid white;
 }

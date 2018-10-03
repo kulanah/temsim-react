@@ -9,9 +9,9 @@ import closeIcon from 'img/closeicon.svg';
 const MinMaxCloseButtons = () => {
   return(
     <div className='minMaxCloseButtonsDiv'>
-      <span className='windowsButton minMaxCloseButton'><img src={minIcon} alt=''/></span>
-      <span className='windowsButton minMaxCloseButton'><img src={maxIcon} alt=''/></span>
-      <span className='windowsButton minMaxCloseButton'><img src={closeIcon} alt=''/></span>
+      <span className='windowsButton minMaxCloseButton'><img className='minMaxCloseButtonImg' src={minIcon} alt=''/></span>
+      <span className='windowsButton minMaxCloseButton'><img className='minMaxCloseButtonImg' src={maxIcon} alt=''/></span>
+      <span className='windowsButton minMaxCloseButton'><img className='minMaxCloseButtonImg' src={closeIcon} alt=''/></span>
     </div>
   );
 };
