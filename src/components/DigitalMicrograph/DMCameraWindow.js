@@ -1,10 +1,14 @@
 import React from 'react';
+import { MiniTitleBar } from './MiniTitleBar';
 
 class DMCameraWindow extends React.Component{
   render(){
     return(
-      <div>test</div>
-    )
+      <div className='DigitalMicrographCamera'>
+        <MiniTitleBar/>
+        test
+      </div>
+    );
   }
 }
 
