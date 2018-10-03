@@ -4,8 +4,9 @@ import 'windows.css';
 
 
 const Popup = (props) => {
+  let cssVal = 'top: ' + props.clientY + '; left: ' + props.clientX + ';';
   return (
-    <div className='testDiv'> {props.text} </div>
+    <div className='testDiv' css={cssVal}> {props.header} </div>
   );
 };
 
