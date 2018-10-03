@@ -59,7 +59,7 @@
   grid-column-end: -1;
 
   grid-row-start: 1;
-  grid-row-end: 92;
+  grid-row-end: 94;
   left: 15%;
   width: 85vw;
 
@@ -434,4 +434,12 @@
   position: absolute;
   background: red;
   color: white;
+}
+
+.windowsWindow{
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+
 }
