@@ -19,8 +19,6 @@ class FileMenuBar extends React.Component{
 
   selectButton(title){
     this.setState({active: title});
-    console.log('selected ' + title);
-    console.log(this.state);
   }
 
   deselectMenu(){
