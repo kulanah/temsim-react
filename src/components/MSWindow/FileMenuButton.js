@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import 'windows.css';
 import { Popup } from './Popup';
@@ -15,11 +14,12 @@ class FileMenuButton extends React.Component{
     this.showMenu = this.showMenu.bind(this);
     this.clickItem = this.clickItem.bind(this);
     this.disablePopup = this.disablePopup.bind(this);
+    this.showHeader = this.showHeader.bind(this);
   }
 
   showMenu(){
-    if(this.state.active == true){
-      return <Popup />;
+    if(this.props.active === this.props.header){
+      return <Popup text={this.props.header}/>;
     }
   }
 
@@ -27,16 +27,26 @@ class FileMenuButton extends React.Component{
     this.setState({ active: false });
   }
 
-  clickItem(){
-    this.setState({
-      active: true,
-    });
-  };
+  clickItem(event){
+    console.log(event);
+    console.log(event.clientX);
+    this.props.onClick(this.props.header);
+    this.showHeader();
+  }
+
+  showHeader(){
+    console.log(this.props);
+    if (this.props.active === this.props.header){
+      return <div className='fileMenuBarButtonSelected' onClick={this.clickItem}>{this.props.header}</div>;
+    } else {
+      return <div className='fileMenuBarButton' onClick={this.clickItem}>{this.props.header}</div>;
+    }
+  }
 
   render(){
     return (
       <div>
-        <div className='fileMenuBarButton' onClick={this.clickItem}>{this.props.header}</div>
+        {this.showHeader()}
         {this.showMenu()}
       </div>
     );
