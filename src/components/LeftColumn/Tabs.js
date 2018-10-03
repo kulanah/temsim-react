@@ -73,11 +73,11 @@ class Tabs extends React.Component{
             {this.state.visibleTabs.map(tab =>{
               if (this.state.selected === tab.id){
                 return(
-                  <span id={tab.id} className='tabsheader button selectedTab'>{tab.name}</span>
+                  <span id={tab.id} key={tab.id} className='tabsheader button selectedTab'>{tab.name}</span>
                 );
               } else {
                 return(
-                  <span id={tab.id} onClick={this.selectTab} className='tabsheader button'>{tab.name}</span>
+                  <span id={tab.id} key={tab.id} onClick={this.selectTab} className='tabsheader button'>{tab.name}</span>
                 );
               }
             })}
