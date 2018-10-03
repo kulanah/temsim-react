@@ -51,11 +51,11 @@ body{
   grid-row-start: 98;
   grid-row-end: -1;
 
-  height: 2%;
-
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
+
+  background: white;
 }
 
 .digitalMicrographDiv{
