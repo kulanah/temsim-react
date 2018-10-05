@@ -16,6 +16,7 @@
   top: 0;
   left: 0;
   width: 20%;
+  padding-bottom: 3px;
 }
 
 .MiniTitleBar{
@@ -42,4 +43,51 @@
 
 .MiniCloseButton:active{
   margin-bottom: 4px;
+}
+
+.CameraExpand{
+  margin-left: 3px;
+}
+
+.DMContentGroup{
+  width: auto;
+  margin-left: 2px;
+  margin-right: 3px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  box-shadow: 1px 0px 0px 0px #404040, 0px 1px 0px 0px #404040, 1px 1px 0px 0px #404040;
+
+  margin-bottom: 1px;
+}
+
+.DMContentRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.CenterLeftContent{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+#cameraSetupDropdown{
+  width: 30%;
+  margin-left: 25%;
+}
+
+.CenterLeftContent{
+  display: flex;
+  align-content: flex-start;
+}
+
+.CameraExpand{
+  margin-right: 30%;
 }
