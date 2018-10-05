@@ -19,18 +19,18 @@ class Checkbox extends React.Component{
   generateCheckbox(){
     if (this.state.selected === true){ 
       return (
-        <span onClick={this.selectCheckbox} className='checkbox'><span className='checkmark'>✓</span></span> 
+        <span className='checkbox'><span className='checkmark'>✓</span></span> 
       )
     } else {
       return (
-        <span onClick={this.selectCheckbox} className='checkbox'><span className='checkmark'>‍</span></span> 
+        <span className='checkbox'><span className='checkmark'>‍</span></span> 
       )
     }
   };
 
   render(){
     return(
-      <div className='checkboxRow'>
+      <div onClick={this.selectCheckbox} className='checkboxRow'>
         {this.generateCheckbox()}
         <span className='checkboxLabel'>{this.props.label} </span>
       </div>
