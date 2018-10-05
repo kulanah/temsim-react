@@ -4,6 +4,7 @@ import { Dropdown } from 'components/MSWindow/Dropdown';
 
 import DMExpand from 'img/expandDigitalMicrograph.svg';
 import './DigitalMicrograph.css';
+import { Checkbox } from '../MSWindow/Checkbox';
 
 class DMCameraWindow extends React.Component{
   render(){
@@ -26,6 +27,9 @@ class DMCameraWindow extends React.Component{
               Setup: 
             </span>
             <Dropdown id='cameraSetupDropdown'/>
+          </div>
+          <div className='CenterLeftContent'>
+            <Checkbox id='autoexposurecheck' label='Auto Exposure'/>
           </div>
         </div>
       </div>
