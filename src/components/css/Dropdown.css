@@ -1,0 +1,44 @@
+.Dropdown{
+  display: flex;
+  font-size: 10px;
+  height: 13px;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #D4D0C8;
+  border-bottom: 1px solid #D4D0C8;
+}
+
+.DropdownOuter{
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+
+}
+
+.DropdownExpandArrow{
+  font-size: 6px;
+  vertical-align: baseline;
+  padding-top: 3px;
+  background: #D4D0C8;
+  border-top: 1px solid #FFFBF0;
+  border-left: 1px solid #FFFBF0;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+
+.DropdownExpandArrowOuter{
+  border-top: 1px solid #D4D0C8;
+  border-left: 1px solid #D4D0C8;
+  border-right: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+}
+
+.DropdownArrowImage{
+  height: 8px;
+  padding-top: 2px;
+}
