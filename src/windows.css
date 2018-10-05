@@ -441,7 +441,6 @@ body{
 
 .checkbox{
   display: inline-block;
-  cursor: pointer;
   background: white;
   width: 0.65em;
   height: 0.65em;
@@ -455,6 +454,7 @@ body{
 }
 
 .checkboxRow{
+  cursor: pointer;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -470,5 +470,5 @@ body{
 
 .checkboxLabel{
   position: relative;
-  margin-left: 1em;
+  margin-left: 5px;
 }
