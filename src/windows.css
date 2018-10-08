@@ -264,15 +264,15 @@ body{
   border-right: 2px solid var(--titleBarColor);
   border-bottom: 2px solid var(--titleBarColor);
   font-size: 11px;
-  padding: 0 2px 0 2px;
   box-shadow: 2px 2px 1px var(--windowsGrey);
+  padding: 3px;
 }
 
 .windowsButton:active{
   border-top: 1px inset var(--windowsGrey);
   border-left: 1px inset var(--windowsGrey);
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .windowsSelect{
@@ -471,4 +471,32 @@ body{
 .checkboxLabel{
   position: relative;
   margin-left: 5px;
+}
+
+.windowsInput{
+  user-select: text;
+  background: white;
+  width: 4em;
+  min-height: 1.1em;
+
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-bottom: 1px solid var(--windowsGrey);
+  border-right: 1px solid var(--windowsGrey);
+  box-shadow: 
+    -1px 0 0 var(--titleBarColor), 
+    -1px -1px 0 var(--titleBarColor), 
+    0 -1px var(--titleBarColor), 
+    1px 1px 0 white, 
+    1px 0 0  white, 
+    0 1px 0 white, 
+    -1px 1px 0 white, 
+    1px -1px 0 white;
+
+  margin-left: 5px;
+}
+input[type=number].removeSpinner::-webkit-inner-spin-button, 
+input[type=number].removeSpinner::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
