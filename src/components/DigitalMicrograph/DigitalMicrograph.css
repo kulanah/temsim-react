@@ -76,18 +76,11 @@
   align-content: flex-start;
   padding-top: 3px;
   padding-left: 3px;
+  margin: 2px 0 1px 4px;
+  width: 70%;
+  justify-content: space-between;
 }
 
 #cameraSetupDropdown{
-  width: 30%;
-  margin-left: 25%;
-}
-
-.CenterLeftContent{
-  display: flex;
-  align-content: flex-start;
-}
-
-.CameraExpand{
-  margin-right: 30%;
+  width: 50%;
 }
