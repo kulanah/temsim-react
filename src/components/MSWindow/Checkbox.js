@@ -6,6 +6,11 @@ class Checkbox extends React.Component{
     this.state = {selected: false};
     this.selectCheckbox = this.selectCheckbox.bind(this);
     this.generateCheckbox = this.generateCheckbox.bind(this);
+    this.returnState = this.returnState.bind(this);
+  }
+
+  returnState(){
+    return this.state.selected;
   }
 
   selectCheckbox(){
@@ -20,13 +25,13 @@ class Checkbox extends React.Component{
     if (this.state.selected === true){ 
       return (
         <span className='checkbox'><span className='checkmark'>✓</span></span> 
-      )
+      );
     } else {
       return (
         <span className='checkbox'><span className='checkmark'>‍</span></span> 
-      )
+      );
     }
-  };
+  }
 
   render(){
     return(
