@@ -3,8 +3,12 @@ import { MiniTitleBar } from './MiniTitleBar';
 import { Dropdown } from 'components/MSWindow/Dropdown';
 
 import DMExpand from 'img/expandDigitalMicrograph.svg';
+import disabledLight from 'img/statusLightDisabled.png';
+import configButton from 'img/cameraViewConfigButton.png';
+
 import './DigitalMicrograph.css';
 import { Checkbox } from '../MSWindow/Checkbox';
+import { Input } from '../MSWindow/Input';
 
 class DMCameraWindow extends React.Component{
   render(){
@@ -30,6 +34,25 @@ class DMCameraWindow extends React.Component{
           </div>
           <div className='CenterLeftContent'>
             <Checkbox id='autoexposurecheck' label='Auto Exposure'/>
+          </div>
+          <Input label='Exposure (s)'/>
+          <div className='CenterLeftContent'>
+
+            <span><img src={disabledLight} /></span>
+            <span><input className='windowsButton' type='button' value='Start View'/></span>
+            
+          </div>
+          <div className='CenterLeftContent'>
+            <Checkbox id='autoexposurecheck' label='Focus Loupe'/>
+          </div>
+          <div className='CenterLeftContent'>
+            <Checkbox id='autoexposurecheck' label='Auto Survey'/>
+          </div>
+          <div className='CenterLeftContent'>
+            <Checkbox id='autoexposurecheck' label='Camera Inserted'/>
+          </div>
+          <div className='RightContent'>
+            <button className='windowsButton'><img src={configButton} alt=''/></button>
           </div>
         </div>
       </div>
