@@ -60,6 +60,7 @@
   box-shadow: 1px 0px 0px 0px #404040, 0px 1px 0px 0px #404040, 1px 1px 0px 0px #404040;
 
   margin-bottom: 1px;
+  padding-bottom: 5px;
 }
 
 .DMContentRow{
@@ -79,6 +80,13 @@
   margin: 2px 0 1px 4px;
   width: 70%;
   justify-content: space-between;
+}
+
+.RightContent{
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 99%;
 }
 
 #cameraSetupDropdown{
