@@ -79,6 +79,28 @@ class DMCameraWindow extends React.Component{
           <div className='CenterLeftContent'>
             <Input label='Exposure (s)' defaultValue='1'/>
           </div>
+          <div className='CenterContent'>
+            <button className='windowsButton'>Start Acquire</button>
+          </div>
+          <div className='CenterContent'>
+            <span className='emptyBar' />
+            <div>
+              <button className='windowsButton'><img src={configButton} alt=''/></button>
+            </div>
+          </div>
+        </div>
+        <div className='DMContentGroup'>
+          <div className='CenterLeftContent'>
+            <span className='CameraExpand'>
+              <img src={DMExpand} alt='' />
+            </span>
+            <span>
+              Intensity 
+            </span>
+          </div> 
+        </div>
+        <div className='DMContentGroup'>
+          <div className='DMGradient'></div>
         </div>
       </div>
     );
