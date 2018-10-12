@@ -11,10 +11,8 @@ const Dropdown = (props) => {
   let displayArrow = function(){
     return(
       <span>
-        <span className='DropdownExpandArrowOuter'>
-          <span className='DropdownExpandArrow'>
-            <img src={ExpandArrow} className='DropdownArrowImage' alt=''/>
-          </span>
+        <span className='DropdownExpandArrow'>
+          <img src={ExpandArrow} className='DropdownArrowImage' alt=''/>
         </span>
       </span>
     )
