@@ -3,9 +3,9 @@ import 'components/css/Dropdown.css';
 import ExpandArrow from 'img/expandDropdown.svg';
 
 const Dropdown = (props) => {
-  let id = '';
-  if (props.id){
-    id = props.id;
+  let className = 'Dropdown';
+  if (props.className){
+    className = props.className + ' Dropdown';
   }
 
   let displayArrow = function(){
@@ -19,7 +19,7 @@ const Dropdown = (props) => {
   }
 
   return (
-    <div className='Dropdown' id={id} >
+    <div className={className} > 
       <span>
         Search
       </span>

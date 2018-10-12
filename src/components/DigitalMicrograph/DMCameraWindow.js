@@ -31,7 +31,7 @@ class DMCameraWindow extends React.Component{
             <span>
               Setup: 
             </span>
-            <Dropdown id='cameraSetupDropdown'/>
+            <Dropdown className='cameraSetupDropdown'/>
           </div>
           <div className='CenterLeftContent'>
             <Checkbox id='autoexposurecheck' label='Auto Exposure'/>
@@ -71,7 +71,7 @@ class DMCameraWindow extends React.Component{
             <span>
               Setup
             </span>
-            <Dropdown />
+            <Dropdown className='cameraSetupDropdown'/>
           </div>
           <div className='CenterLeftContent'>
             <Checkbox label='Auto Exposure'/>
