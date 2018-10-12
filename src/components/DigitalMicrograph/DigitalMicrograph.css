@@ -42,7 +42,9 @@
 }
 
 .MiniCloseButton:active{
-  margin-bottom: 4px;
+  margin-left: 101.2%;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 .CameraExpand{
