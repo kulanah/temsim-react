@@ -7,7 +7,7 @@
 
 #startMenuSeparator{
   width: 2px;
-  height:  70%;
+  height: 1.7em;
   background: var(--windowsGrey);
   border-top: 1px solid white;
   border-left: 1px solid white;
