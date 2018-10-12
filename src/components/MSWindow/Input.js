@@ -4,7 +4,7 @@ class Input extends React.Component{
   constructor(props){
     super(props);
 
-    this.state = {value: 0.1};
+    this.state = {value: Number(this.props.defaultValue)};
     this.changeValue = this.changeValue.bind(this);
   }
 
