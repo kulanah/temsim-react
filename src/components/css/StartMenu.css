@@ -1,7 +1,8 @@
 .taskBarIcon{
+  position: relative;
+  top: 3px;
   height: 18px;
   width: 18px;
-  padding-top: 2px;
   margin-right: 3px;
 }
 
