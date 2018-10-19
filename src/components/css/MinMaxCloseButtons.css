@@ -5,6 +5,8 @@
 }
 
 .minMaxCloseButton{
+  position: relative;
+  top: -2px;
   margin-left: 3px;
   margin-top: 0.25em;
   color: black;
