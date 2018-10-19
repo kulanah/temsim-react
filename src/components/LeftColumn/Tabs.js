@@ -2,6 +2,7 @@ import React from 'react';
 import leftarrow from 'img/leftarrow.svg';
 import rightarrow from 'img/rightarrow.svg';
 import 'windows.css';
+import 'components/css/Tabs.css'
 
 class Tabs extends React.Component{
   constructor(){
@@ -10,8 +11,9 @@ class Tabs extends React.Component{
     this.state = {
       startTab: 0,
       leftTabs: [],
-      visibleTabs: [{name: 'Setup', id: 0}, {name: 'Search', id: 1}, {name: 'Tune', id: 2}, {name: 'STEM', id: 3}],
-      rightTabs: [{name: 'Feg Register', id: 4}, {name: 'EFTEM', id: 5}, {name: 'Dark Field', id: 6}],
+      visibleTabs: [{name: 'Setup', id: 0}, {name: 'Search', id: 1}, {name: 'Tune', id: 2}, {name: 'STEM', id: 3}, 
+                    {name: 'Feg Register', id: 4}, {name: 'EFTEM', id: 5}, {name: 'Dark Field', id: 6}],
+      hiddenTabs: [],
       selected: 0,
     };
 
@@ -30,38 +32,31 @@ class Tabs extends React.Component{
   }
 
   decrementArray(){
-    if (this.state.leftTabs.length > 0){
-      let newTabs = this.state.visibleTabs;
-      let newRightTabs = [...this.state.rightTabs];
-      let newLeftTabs = [...this.state.leftTabs];
-
-      newRightTabs.push(newTabs.pop());
-      newTabs.unshift(newLeftTabs.pop());
-
-      this.setState({
-        visibleTabs: newTabs,
-        leftTabs: newLeftTabs,
-        rightTabs: newRightTabs,
-        startTab: this.state.startTab - 1,
-      });
+    let oldTabs = [...this.state.visibleTabs];
+    let hiddenTabs = [...this.state.hiddenTabs];
+    if (this.state.hiddenTabs.length > 0){
+      hiddenTabs = [...this.state.hiddenTabs];
+      oldTabs = [hiddenTabs.pop(1), ...this.state.visibleTabs];
     }
+
+    this.setState({
+      visibleTabs: oldTabs,
+      hiddenTabs: hiddenTabs,
+    });
   }
 
   incrementArray(){
-    if (this.state.rightTabs.length > 0){
-      let newTabs = this.state.visibleTabs;
-      let newLeftTabs = [...this.state.leftTabs];
+    let oldTabs = [...this.state.visibleTabs];
+    let hiddenTabs = [...this.state.hiddenTabs];
 
-      newLeftTabs.push(newTabs[0]);
-      newTabs = newTabs.slice(1);
-      newTabs.push(this.state.rightTabs[0]);
-      this.setState({
-        visibleTabs: newTabs,
-        rightTabs: this.state.rightTabs.slice(1),
-        leftTabs: newLeftTabs,
-        startTab: this.state.startTab + 1,
-      });
+    if (oldTabs.length > 1){
+      hiddenTabs.push(oldTabs.shift(1));
     }
+
+    this.setState({
+      visibleTabs: oldTabs,
+      hiddenTabs: hiddenTabs
+    });
   }
 
   render(){
@@ -69,18 +64,20 @@ class Tabs extends React.Component{
       <div className='tabsdiv'>
         <div className='titleBar'>Workset</div>
         <div className='tabBar'>
-          <span className='tabs'>
-            {this.state.visibleTabs.map(tab =>{
-              if (this.state.selected === tab.id){
-                return(
-                  <span id={tab.id} key={tab.id} className='tabsheader button selectedTab'>{tab.name}</span>
-                );
-              } else {
-                return(
-                  <span id={tab.id} key={tab.id} onClick={this.selectTab} className='tabsheader button'>{tab.name}</span>
-                );
-              }
-            })}
+          <span className='tabsOuter'>
+            <span className='tabs'>
+              {this.state.visibleTabs.map(tab =>{
+                if (this.state.selected === tab.id){
+                  return(
+                    <span id={tab.id} key={tab.id} className='tabsheader button selectedTab'>{tab.name}</span>
+                  );
+                } else {
+                  return(
+                    <span id={tab.id} key={tab.id} onClick={this.selectTab} className='tabsheader button'>{tab.name}</span>
+                  );
+                }
+              })}
+            </span>
           </span>
           <span className='scrollarrows'>
             <span className='arrowspan button' onClick={this.decrementArray}><img className='arrowimage' src={leftarrow} alt='Left arrow for tabs scrolling'/></span>
