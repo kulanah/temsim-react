@@ -14,14 +14,14 @@ import './DigitalMicrograph.css';
 class DMCameraWindow extends React.Component{
   render(){
     return(
-      <div className='DigitalMicrographCamera'>
+      <div className='DigitalMicrographCamera DigitalMicrographContent'>
         <MiniTitleBar/>
         <div className='DMContentGroup'>
           <div className='CenterLeftContent'>
             <span className='CameraExpand'>
               <img src={DMExpand} alt='' />
             </span>
-            <span>
+            <span className='CenterLeftHeader'>
               Camera View
             </span>
           </div>
@@ -61,7 +61,7 @@ class DMCameraWindow extends React.Component{
             <span className='CameraExpand'>
               <img src={DMExpand} alt='' />
             </span>
-            <span>
+            <span className='CenterLeftHeader'>
               Camera Acquire
             </span>
           </div> 
@@ -94,7 +94,7 @@ class DMCameraWindow extends React.Component{
             <span className='CameraExpand'>
               <img src={DMExpand} alt='' />
             </span>
-            <span>
+            <span className='CenterLeftHeader'>
               Intensity 
             </span>
           </div> 
