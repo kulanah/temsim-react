@@ -15,8 +15,8 @@ const Dropdown = (props) => {
           <img src={ExpandArrow} className='DropdownArrowImage' alt=''/>
         </span>
       </span>
-    )
-  }
+    );
+  };
 
   return (
     <div className={className} > 
@@ -28,4 +28,4 @@ const Dropdown = (props) => {
   );
 };
 
-export { Dropdown }
+export { Dropdown };
