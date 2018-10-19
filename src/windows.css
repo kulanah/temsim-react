@@ -18,7 +18,7 @@ body{
   grid-column-start: 1;
   grid-column-end: 16;
   grid-row-start: 1;
-  grid-row-end: 96;
+  grid-row-end: 97;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body{
   grid-column-start: 1;
   grid-column-end: -1;
   
-  grid-row-start: 94;
+  grid-row-start: 95;
   grid-row-end: 98;
   
   display:flex;
@@ -40,6 +40,8 @@ body{
   border-left: 1px solid white;
   border-right: 1px solid var(--titleBarColor);
   border-bottom: 1px solid var(--titleBarColor);
+
+  font-size: 12px;
 }
 
 #startMenuLeft{
@@ -80,7 +82,7 @@ body{
   grid-column-end: -1;
 
   grid-row-start: 1;
-  grid-row-end: 94;
+  grid-row-end: 95;
   left: 15%;
   width: 85vw;
 
