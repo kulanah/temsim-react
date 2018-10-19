@@ -27,7 +27,6 @@ class Dropdown extends React.Component{
 
   expandDropdown(){
     this.setState({selected: !this.state.selected});
-    console.log('clicked expand');
   }
 
   displayDropdown(){
@@ -61,7 +60,7 @@ class Dropdown extends React.Component{
         </span>
       </span>
     );
-  };
+  }
 
   render(){
     return (
@@ -76,6 +75,6 @@ class Dropdown extends React.Component{
       </div>
     );
   }
-};
+}
 
 export { Dropdown };
