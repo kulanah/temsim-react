@@ -1,6 +1,7 @@
 .tabsdiv{
   font-family: ms-sans, helvetica, arial, sans-serif;
   background: var(--windowsGrey);
+  overflow: hidden;
 }
 
 .tabBar{
@@ -50,7 +51,6 @@
   width: 1em;
   height: .75em;
 }
-
 
 .arrowspan{
   background: #D4D0C8;
