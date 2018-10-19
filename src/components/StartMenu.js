@@ -80,7 +80,7 @@ class StartMenu extends React.Component{
           <span>
 
           </span>
-          <span>
+          <span id='ClockSpan'>
             {this.state.clockString}
           </span>
         </span>
