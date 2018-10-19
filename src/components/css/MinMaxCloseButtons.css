@@ -5,19 +5,28 @@
 }
 
 .minMaxCloseButton{
-  margin-left: 1em;
+  margin-left: 3px;
   margin-top: 0.25em;
   color: black;
   background: var(--windowsGrey);
-  width: 1em;
-  height: 1.2em;
+  width: 0.7em;
+  height: 0.8em;
+  box-shadow: 1px 1px 1px black;
 }
+
 .minMaxCloseButton:active{
-  margin-left: 1.1em;
+  margin-top: 3px;
 }
 
 .minMaxCloseButtonImg{
+  position: relative;
+  left: -2px;
+  top: -2px;
   height: 1.5em;
+}
+
+.minMaxCloseButtonImg:active{
+  top: -1px;
 }
 
 .minMaxCloseButtonDisabled{
