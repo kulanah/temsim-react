@@ -1,17 +1,22 @@
 .Dropdown{
-  display: flex;
   font-size: 10px;
   height: 13px;
-  flex-direction: row;
   padding-right: 1px;
   padding-top: 1px;
-  justify-content: space-between;
   background: white;
   border-top: 1px solid #404040;
   border-left: 1px solid #404040;
   border-right: 1px solid #D4D0C8;
   border-bottom: 1px solid #D4D0C8;
   box-shadow: -1px 0 0 #808080, 1px 1px 0 white, 1px -1px 0 #808080, -1px -1px 0 #808080, -1px 1px 0 white, inset 0 1px 0 #404040;
+}
+
+.DropdownDisplay{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
 }
 
 .DropdownExpandArrow{
@@ -49,4 +54,18 @@
   top: 2px;
   height: 8px;
   padding-top: 2px;
+}
+
+.EmptyOptions{
+  position: relative;
+  top: 0.1em;
+  left: -1px;
+  background: white;
+  height: 0.3em;
+  width: 90%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  
+
 }
