@@ -148,3 +148,7 @@
 .DMBottomContent{
   height: 5%;
 }
+
+.DigitalMicrographBottom{
+  z-index: 4;
+}
