@@ -1,5 +1,52 @@
 .TEMUIStatusBar{
-  width: 100%;
+  width: 99.5%;
+  margin-left: 0.2%;
   position: relative;
-  bottom: 5em;
+  bottom: 6.2em;
+  background: #d4d0c8;
+  height: 5em;
+  border: 1px solid white;
+  box-shadow: 1px 1px 0 #808080, -1px -1px 0 #808080;
+
+  z-index: 3;
+}
+
+.StatusBarInner{ 
+  margin: 5px 2px 2px 2px;
+
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+
+  background: #fffbf0;
+  border: 1px solid #a7a6a3;
+  box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0;
+
+}
+
+.StatusRightBorder{
+  box-shadow: 1px 0px 0 #dad8d0;
+  margin-right: 4px;
+}
+
+.StatusSpaceBetween{
+  display: flex;
+  justify-content: space-between;
+}
+
+.StatusGrow5{
+  flex-grow: 5;
+}
+
+.StatusGrow3{
+  flex-grow: 3;
+}
+
+.StatusBarColumn{
+  padding-top: 4px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
 }
