@@ -2,9 +2,9 @@
   width: 99.5%;
   margin-left: 0.2%;
   position: relative;
-  bottom: 6.2em;
+  bottom: 8.3em;
   background: #d4d0c8;
-  height: 5em;
+  height: 8.5em;
   border: 1px solid white;
   box-shadow: 1px 1px 0 #808080, -1px -1px 0 #808080;
 
@@ -12,7 +12,7 @@
 }
 
 .StatusBarInner{ 
-  margin: 5px 2px 2px 2px;
+  margin: 0 2px 2px 2px;
 
   padding-left: 3px;
   padding-right: 3px;
@@ -21,13 +21,14 @@
   justify-content: space-between;
 
   background: #fffbf0;
-  border: 1px solid #a7a6a3;
-  box-shadow: -1px -1px 0 #c0c0c0, 1px 1px 0 #c0c0c0;
+  border: 4px solid #c0c0c0;
+  box-shadow: -1px -1px 0 white, 1px 1px 0 white, 1px -1px 0 white, 1px 1px 0 #c0c0c0, -2px -2px 0 #808080, 2px -2px 0 #808080, -1px -1px 0 inset white, 2px 2px 0 inset #808080, -2px -2px 0 inset #808080;
+
 
 }
 
 .StatusRightBorder{
-  box-shadow: 1px 0px 0 #dad8d0;
+  box-shadow: 1px 0px 0 #808080;
   margin-right: 4px;
 }
 
@@ -49,4 +50,58 @@
   padding-right: 5px;
   display: flex;
   flex-direction: column;
+}
+
+#StatusHeaderDropdown{
+  display: flex; 
+}
+
+.StatusBarHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#StatusHeaderDropdown > *{
+  margin-left: 2px;
+}
+
+.StatusBarDirectAlignButton{
+  margin-top: 1px;
+  padding: 1px;
+  height: 14px;
+  width: 14px;
+}
+
+#StatusDAClose{
+  height: 14px;
+}
+
+.StatusDADropdown{
+  flex-grow: 1;
+  margin-top: 0;
+  width: 11em;
+}
+
+#StatusExpandUp{
+  align-self: stretch;
+  border: 1px solid #808080;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-grow: 4;
+  background: #fffbf0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#TecnaiHeader{
+  flex-grow: 2;
+  font-size: 30px;
+  color: #086a9b;
+  font-weight: lighter;
+}
+
+#StatusBarDropDownUp{
+  height: 1.8em;
+  width: 1.1em;
 }
