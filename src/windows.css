@@ -84,7 +84,7 @@ body{
   grid-row-start: 1;
   grid-row-end: 95;
   left: 15%;
-  width: 85vw;
+  width: 84.5vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -111,6 +111,7 @@ body{
   padding-left: 0.4em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  margin-right: 1em;
   font-weight: 800;
   font-size: 12px;
   margin: 2px;
@@ -404,6 +405,7 @@ body{
   flex-direction: column;
   background: var(--windowsGrey);
   margin: 2px;
+  padding-right: 5px;
   border: 1px solid white;
 }
 
