@@ -1,7 +1,7 @@
 .minMaxCloseButtonsDiv{
   display: flex;
   flex-direction: row;
-  margin-right: 1em;
+  margin-right: 0.3em;
 }
 
 .minMaxCloseButton{
