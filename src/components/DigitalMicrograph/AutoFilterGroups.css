@@ -25,10 +25,10 @@
   top: 2em;
   right: 0;
   margin-right: 1em;
-  box-shadow: 2px 2px 7px black;
-  border-top: 3px solid white;
+  /* box-shadow: 2px 2px 7px black; */
+  /* border-top: 3px solid white;
   border-left: 3px solid white;
   border-right: 3px solid #808080;
-  border-bottom: 3px solid #808080;
-  background: #d4d0c8;
+  border-bottom: 3px solid #808080; */
+  /* background: #d4d0c8; */
 }

@@ -406,7 +406,13 @@ body{
   background: var(--windowsGrey);
   margin: 2px;
   padding-right: 5px;
-  border: 1px solid white;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  box-shadow: 1px 1px 2px black;
+
+  box-sizing: border-box;
 }
 
 .checkbox{
