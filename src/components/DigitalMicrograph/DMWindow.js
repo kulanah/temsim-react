@@ -4,12 +4,14 @@ import 'windows.css';
 import icon from 'img/icon.png';
 import { Window } from '../MSWindow/Window';
 import { DMContent } from './DMContent';
+import { AutoFilter } from './AutoFilter';
 
 class DMWindow extends React.Component{
   constructor(props){
     super(props);
 
     this.createWindow = this.createWindow.bind(this);
+    this.state= {autoFilter: <AutoFilter />};
   }
 
   createFileBar(){
@@ -45,6 +47,24 @@ class DMWindow extends React.Component{
     return fileBar;
   }
 
+  displayAutoFilter(){
+    return this.state.autoFilter;
+  }
+
+  displayAutoFilterConditional(){
+    if (this.state.autoFilter.state.visible === true){
+      return this.state.autoFilter;
+    } else {
+      return null;
+    }
+
+  }
+
+  componentDidMount(){
+    this.displayAutoFilter = this.displayAutoFilterConditional;
+
+  }
+
   createWindow(){
     let titleBar = {title: 'Digital Micrograph', icon: icon};
     let fileBar = this.createFileBar();
@@ -56,6 +76,8 @@ class DMWindow extends React.Component{
     return(
       <div className='digitalMicrographDiv'>
         {this.createWindow()}        
+        {this.displayAutoFilter()}
+
       </div>
     );
   }
