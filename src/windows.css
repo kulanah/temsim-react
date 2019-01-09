@@ -225,6 +225,7 @@ body{
 
 .windowsButton{
   background: var(--windowsGrey);
+  margin-bottom: 1px;
   outline: 1px solid black;
   border-top: 1px solid white;
   border-left: 1px solid white;
@@ -242,6 +243,7 @@ body{
   border-bottom: 1px solid white;
   margin-right: 1px;
   margin-top: 1px;
+  margin-bottom: 0px;
 }
 
 .windowsSelect{

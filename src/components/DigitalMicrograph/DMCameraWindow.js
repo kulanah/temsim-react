@@ -40,7 +40,7 @@ class DMCameraWindow extends React.Component{
           <div className='CenterLeftContent'>
 
             <span><img src={disabledLight} alt=''/></span>
-            <span><input className='windowsButton' type='button' value='Start View'/></span>
+            <span><button className='windowsButton DMTextButton'>Start View</button></span>
             
           </div>
           <div className='CenterLeftContent'>
@@ -53,7 +53,7 @@ class DMCameraWindow extends React.Component{
             <Checkbox id='autoexposurecheck' label='Camera Inserted'/>
           </div>
           <div className='RightContent'>
-            <button className='windowsButton'><img src={configButton} alt=''/></button>
+            <button className='windowsButton DMConfigButton'><img src={configButton} alt=''/></button>
           </div>
         </div>
         <div className='DMContentGroup'>
@@ -80,12 +80,12 @@ class DMCameraWindow extends React.Component{
             <Input label='Exposure (s)' defaultValue='1'/>
           </div>
           <div className='CenterContent'>
-            <button className='windowsButton'>Start Acquire</button>
+            <button className='windowsButton DMTextButton'>Start Acquire</button>
           </div>
           <div className='CenterContent'>
             <span className='emptyBar' />
             <div>
-              <button className='windowsButton'><img src={configButton} alt=''/></button>
+              <button className='windowsButton DMConfigButton'><img src={configButton} alt=''/></button>
             </div>
           </div>
         </div>

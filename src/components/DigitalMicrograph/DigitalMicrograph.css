@@ -41,6 +41,8 @@
 .MiniTitleBar{
   margin: 2px;
   background: linear-gradient(to right, #808080 40%, #C0C0C0);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .MiniCloseButtonImg{
@@ -52,19 +54,17 @@
 .MiniCloseButton{
   margin-top: 3px;
   margin-bottom: 3px;
-  margin-left: 101%;
-  
-  margin-right: 1px;
+  margin-right: -1px;
   height: 0.8em;
-  width: 0.7em;
+  width: 0.8em;
 
   padding: 0 0 0 1px;
 }
 
 .MiniCloseButton:active{
-  margin-left: 101.2%;
   margin-top: 5px;
   margin-bottom: 2px;
+  margin-right: -2px;
 }
 
 .CameraExpand{
@@ -151,4 +151,12 @@
 
 .DigitalMicrographBottom{
   z-index: 4;
+}
+
+.DMConfigButton{
+  height: 2em;
+}
+
+.DMTextButton{
+  height: 2em;
 }
