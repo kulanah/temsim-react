@@ -54,6 +54,7 @@
 
 #StatusHeaderDropdown{
   display: flex; 
+    margin-right: 4px;
 }
 
 .StatusBarHeader{
@@ -64,6 +65,7 @@
 
 #StatusHeaderDropdown > *{
   margin-left: 2px;
+  margin-right: 0;
 }
 
 .StatusBarDirectAlignButton{

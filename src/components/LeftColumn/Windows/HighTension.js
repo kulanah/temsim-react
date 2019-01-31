@@ -20,8 +20,9 @@ class HighTension extends React.Component{
           </span>
         </div>
         <div className='leftColContent vacuumText'>
-          <div className='contentRow'>
+          <div className='contentRow spaceBetween'>
             <button className='windowsButton' id='highTensionButton'>High Tension</button>
+            <span id='HighTensionVoltage'>200 kV</span>
           </div>
           <div className='contentRow'>
             <select className='windowsSelect'>

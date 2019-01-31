@@ -84,7 +84,6 @@ body{
   grid-row-start: 1;
   grid-row-end: 95;
   left: 15%;
-  width: 84.5vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -251,6 +250,10 @@ body{
   background: white;
 }
 
+.spaceBetween{
+  justify-content: space-between;
+}
+
 .contentRow{
   display: flex;
   margin-bottom: 2em;
@@ -406,7 +409,7 @@ body{
   display: flex; 
   flex-direction: column;
   background: var(--windowsGrey);
-  margin: 2px;
+  margin-bottom: 2px;
   padding-right: 5px;
   border-top: 2px solid white;
   border-left: 2px solid white;

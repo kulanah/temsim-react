@@ -6,6 +6,7 @@
 #highTensionButton{
   background: #ffff80;
   height: 2em;
+  min-width: 7em;
 }
 
 #freeHighTensionRow{
