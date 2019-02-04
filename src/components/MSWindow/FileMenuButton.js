@@ -34,6 +34,7 @@ class FileMenuButton extends React.Component{
         x: event.clientX,
         y: event.clientY,
         header: this.props.header,
+        buttons: this.props.buttons,
       }
     });
     this.props.onClick(this.props.header);
