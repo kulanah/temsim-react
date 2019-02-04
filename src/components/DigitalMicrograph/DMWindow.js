@@ -23,10 +23,16 @@ class DMWindow extends React.Component{
             title: 'New...',
             type: 'hotkey',
             hotkey: 'CTRL+N',
+            disabled: false,
           }, {
             title: 'Open...',
             type: 'hotkey',
-            hotkey: 'CTRL+O'
+            hotkey: 'CTRL+O',
+            disabled: false,
+          }, {
+            title: 'Open Series...',
+            type: 'single',
+            disabled: true,
           }
         ]
       }, {
@@ -36,9 +42,11 @@ class DMWindow extends React.Component{
             title: 'FFT',
             type: 'hotkey', 
             hotkey: 'CTRL+F',
+            disabled: false,
           }, {
             title: 'Inverse FFT',
-            type: 'single'
+            type: 'single',
+            disabled: false,
           }
         ]
       }

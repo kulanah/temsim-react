@@ -13,6 +13,7 @@
 }
 
 .OneItemRow{
+  display: flex;
   text-align: left;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .DropDownRow{
-  padding: 0 1em 0 1em;
+  padding: 0.1em 1em 0 1em;
 }
 
 .DropDownRow:first-child{
@@ -44,7 +45,7 @@
   color: #808080;
 }
 
-.DropDownrow:hover{
+.DropDownRow:hover{
   background: #000080;
   color: white;
 }
