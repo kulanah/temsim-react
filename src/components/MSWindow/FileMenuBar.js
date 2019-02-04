@@ -15,10 +15,21 @@ class FileMenuBar extends React.Component{
     this.deselectMenu = this.deselectMenu.bind(this);
     this.createFileButtons = this.createFileButtons.bind(this);
     this.hoverButton = this.hoverButton.bind(this);
+    this.ClickOffDropDown= this.ClickOffDropDown.bind(this);
   }
 
   selectButton(title){
     this.setState({active: title});
+
+    global.document.addEventListener('click', this.ClickOffDropDown, false);
+  }
+
+  ClickOffDropDown(event){
+    console.log(event.target);
+    if (event.target.className !== 'FileMenuDropDown'){
+      this.setState({active: null});
+      global.document.removeEventListener('click', this.ClickOffDropDown);
+    }
   }
 
   deselectMenu(){
