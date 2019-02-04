@@ -4,12 +4,13 @@ import 'windows.css';
 import 'components/css/FileBarDropDown.css';
 
 let displayDropdownContent = function(rows){
-  console.log('test');
   let dropDown = rows.map(row => {
     if (row.type === 'hotkey'){
       return displayHotkeyRow(row);
     } else if (row.type === 'single'){
       return displaySingleRow(row);
+    } else if (row.type === 'divider'){
+      return displayDivider();
     } else {
       return 'blank row';
     }
@@ -18,9 +19,20 @@ let displayDropdownContent = function(rows){
   return dropDown;
 };
 
+let displayDivider = function(){
+  return (
+    <span key={Math.random()} className='DropDownDivider'></span>
+  );
+};
+
 let displaySingleRow = function(row){
+  let className = 'DropDownRow';
+  if (row.disabled === true){
+    className += ' DisabledDropDown';
+  }
+
   let returnVal = (
-    <span className='DropDownRow' key={row.title}>
+    <span className={className} key={row.title}>
       <span className='OneItemRow'>
         {row.title}
       </span>
@@ -32,13 +44,12 @@ let displaySingleRow = function(row){
 
 let displayHotkeyRow = function(row){
   let className = 'DropDownRow';
-  console.log(row);
   if (row.disabled === true){
     className += ' DisabledDropDown';
   }
 
   let returnVal = (
-    <span className={className}>
+    <span className={className} key={row.title}>
       <span className='TwoItemRow'>
         <span>{row.title}</span>
         <span>{row.hotkey}</span>
@@ -50,9 +61,8 @@ let displayHotkeyRow = function(row){
 };
 
 const Popup = (props) => {
-  let cssVal = 'top: ' + props.clientY + '; left: ' + props.clientX + ';';
   return (
-    <div className='FileMenuDropDown' css={cssVal}> 
+    <div className='FileMenuDropDown'> 
       {displayDropdownContent(props.buttons)}
     </div>
   );
