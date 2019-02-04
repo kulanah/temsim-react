@@ -1,0 +1,67 @@
+.FileMenuDropDown{
+  background: #D4D0C8;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.25em;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #404040;
+  border-right: 1px solid #404040;
+  width: 13.5em;
+}
+
+.OneItemRow{
+  text-align: left;
+}
+
+.TwoItemRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.DropDownRow{
+  padding: 0 1em 0 1em;
+}
+
+.DropDownRow:first-child{
+  padding-top: 0.2em;
+}
+
+.DropDownRow:last-child{
+  padding-bottom: 0.2em;
+}
+
+.DisabledDropDown{
+  color: #808080;
+  text-shadow: 1px 1px #fffbf0;
+}
+
+.DisabledDropDown:hover{
+  text-shadow: none;
+  color: #808080;
+}
+
+.DropDownrow:hover{
+  background: #000080;
+  color: white;
+}
+
+.DropDownDivider{
+  width: 96%;
+  height: 0px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid white;
+  margin: 0 2% 0 2%;
+}
+
+.expandarrow{
+  height: 0.8em;
+  width: 0.8em;
+}
+
+.dropdowndiv{
+  position: fixed;
+}
