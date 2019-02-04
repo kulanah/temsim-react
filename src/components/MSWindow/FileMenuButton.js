@@ -28,21 +28,21 @@ class FileMenuButton extends React.Component{
     this.setState({ active: false });
   }
 
-  clickItem(event){
+  clickItem(){
     this.setState({
       popup: {
-        x: event.clientX,
-        y: event.clientY,
         header: this.props.header,
         buttons: this.props.buttons,
       }
     });
+
     this.props.onClick(this.props.header);
     this.showHeader();
   }
 
   onMouseOver(){
     this.props.onMouseOver(this.props.header);
+
   }
 
   showHeader(){
