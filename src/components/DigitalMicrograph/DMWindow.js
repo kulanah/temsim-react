@@ -22,16 +22,39 @@ class DMWindow extends React.Component{
           {
             title: 'New...',
             type: 'hotkey',
-            hotkey: 'CTRL+N',
+            hotkey: 'Ctrl+N',
             disabled: false,
           }, {
             title: 'Open...',
             type: 'hotkey',
-            hotkey: 'CTRL+O',
+            hotkey: 'Ctrl+O',
             disabled: false,
           }, {
             title: 'Open Series...',
             type: 'single',
+            disabled: true,
+          }, {
+            type: 'divider',
+          }, {
+            title: 'New Script...',
+            type: 'hotkey',
+            hotkey: 'Ctrl+K',
+            disabled: true,
+          }, {
+            title: 'Execute Script...',
+            type: 'single',
+            disabled: true,
+          }, {
+            type: 'divider',
+          }, {
+            title: 'Close',
+            type: 'hotkey',
+            hotkey: 'Ctrl+W',
+            disabled: true,
+          }, {
+            title: 'Save',
+            type: 'hotkey',
+            hotkey: 'Ctrl+S',
             disabled: true,
           }
         ]
