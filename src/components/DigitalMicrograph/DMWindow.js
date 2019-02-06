@@ -6,6 +6,9 @@ import { Window } from '../MSWindow/Window';
 import { DMContent } from './DMContent';
 import { AutoFilter } from './AutoFilter';
 
+import SaveIcon from 'img/SaveIcon.png';
+import OpenIcon from 'img/OpenIcon.png';
+
 class DMWindow extends React.Component{
   constructor(props){
     super(props);
@@ -15,7 +18,7 @@ class DMWindow extends React.Component{
   }
 
   createFileBar(){
-    let fileBar= [
+    let fileBar = [
       {
         header: 'File',
         buttons: [
@@ -78,6 +81,27 @@ class DMWindow extends React.Component{
     return fileBar;
   }
 
+  createIconBar(){
+    let icons = [
+      {
+        type: 'separator',
+      }, {
+        type: 'icon',
+        source: OpenIcon,
+      }, {
+        type: 'icon', 
+        source: SaveIcon,
+      }, {
+        type: 'separator',
+      }, {
+        type: 'icon',
+        source: OpenIcon,
+      }
+    ];
+
+    return icons;
+  }
+
   displayAutoFilter(){
     return this.state.autoFilter;
   }
@@ -100,7 +124,8 @@ class DMWindow extends React.Component{
     let titleBar = {title: 'Digital Micrograph', icon: icon};
     let fileBar = this.createFileBar();
     let content = <DMContent />;
-    return <Window content={content} titleBar={titleBar} fileBar={fileBar}/>;
+    let iconBar = this.createIconBar();
+    return <Window content={content} titleBar={titleBar} fileBar={fileBar} iconBar={iconBar}/>;
   }
 
   render(){
@@ -108,7 +133,6 @@ class DMWindow extends React.Component{
       <div className='digitalMicrographDiv'>
         {this.createWindow()}        
         {this.displayAutoFilter()}
-
       </div>
     );
   }

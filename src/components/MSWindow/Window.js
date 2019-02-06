@@ -6,7 +6,7 @@ const Window = (props) => {
   return(
     <div className='windowsWindow'>
       <TitleBar {...props.titleBar} />
-      <FileMenuBar data={props.fileBar} />
+      <FileMenuBar data={props.fileBar} icons={props.iconBar} />
       {props.content}
     </div>
   );
