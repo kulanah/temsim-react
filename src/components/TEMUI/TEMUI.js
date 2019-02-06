@@ -14,11 +14,11 @@ class TEMUI extends React.Component{
           {
             title: 'New...',
             type: 'hotkey',
-            hotkey: 'CTRL+N',
+            hotkey: 'Ctrl+N',
           }, {
             title: 'Open...',
             type: 'hotkey',
-            hotkey: 'CTRL+O'
+            hotkey: 'Ctrl+O'
           }
         ]
       }, {
@@ -27,7 +27,7 @@ class TEMUI extends React.Component{
           {
             title: 'FFT',
             type: 'hotkey', 
-            hotkey: 'CTRL+F',
+            hotkey: 'Ctrl+F',
           }, {
             title: 'Inverse FFT',
             type: 'single'

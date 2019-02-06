@@ -64,7 +64,7 @@ class DMWindow extends React.Component{
           {
             title: 'FFT',
             type: 'hotkey', 
-            hotkey: 'CTRL+F',
+            hotkey: 'Ctrl+F',
             disabled: false,
           }, {
             title: 'Inverse FFT',
