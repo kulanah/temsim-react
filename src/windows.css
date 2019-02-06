@@ -123,12 +123,40 @@ body{
   display: flex;
   justify-content: flex-start;
   padding-left: 0.5em;
+  margin-bottom: 3px;
+  flex-direction: column;
 }
 
 .fileMenuBarButton{
   margin-bottom: 0;
   padding: 1px 5px 2px 5px;
 }
+
+.FileMenuButtons{
+  display: flex;
+}
+
+.FileMenuIcons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FileBarIcon{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.IconBarSeparator{
+  margin-left: 3px;
+  margin-right: 3px;
+  min-width: 1px;
+  min-height: 1em;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
 
 .fileMenuBarButtonSelected{
   border-top: 1px solid var(--titleBarColor);
@@ -138,14 +166,8 @@ body{
   padding: 2px 4px 0px 4px;
   margin: 0px 0 -2px 0;
   background: var(--windowsGrey);
-  /* background: #e6e6eb;  */
   color: black;
 }
-
-/* .fileMenuBarButton:hover{
-  background: blue;
-  color: white;
-} */
 
 .disabled{
   text-shadow: 1px 1px #fffbf0;
