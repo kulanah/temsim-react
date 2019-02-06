@@ -35,6 +35,13 @@ class TEMUI extends React.Component{
         ]
       }, {
         header: 'Help',
+        buttons: [
+          {
+            title: 'test button',
+            type: 'hotkey',
+            hotkey: 'Ctrl+H',
+          }
+        ]
       }
     ];
 
