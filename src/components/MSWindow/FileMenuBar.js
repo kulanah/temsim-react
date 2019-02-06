@@ -15,7 +15,8 @@ class FileMenuBar extends React.Component{
     this.deselectMenu = this.deselectMenu.bind(this);
     this.createFileButtons = this.createFileButtons.bind(this);
     this.hoverButton = this.hoverButton.bind(this);
-    this.clickOffDropDown= this.clickOffDropDown.bind(this);
+    this.clickOffDropDown = this.clickOffDropDown.bind(this);
+    this.createFileIcons = this.createFileIcons.bind(this);
   }
 
   selectButton(title){
@@ -53,10 +54,31 @@ class FileMenuBar extends React.Component{
     }
   }
 
+  createFileIcons(){
+    let iconsArr = [];
+    if (this.props.icons){
+      iconsArr = this.props.icons.map(icon => {
+        if (icon.type === 'icon'){
+          return <img src={icon.source} className='FileBarIcon' alt='' key={Math.random()} />;
+        } else if (icon.type === 'separator'){
+          return <span className='IconBarSeparator' key={Math.random()}></span>;
+        } else {
+          return null;
+        }
+      });
+    }
+    return iconsArr;
+  }
+
   render(){
     return(
       <div className='fileMenuBar'>
-        {this.createFileButtons()} 
+        <span className='FileMenuButtons'>
+          {this.createFileButtons()} 
+        </span>
+        <span className='FileMenuIcons'>
+          {this.createFileIcons()}
+        </span>
       </div>
     );
   }
