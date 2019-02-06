@@ -36,6 +36,7 @@ class FileMenuBar extends React.Component{
   }
 
   hoverButton(event){
+    //state.active represents the currently selected, if any, drop down menu
     if (this.state.active !== null){
       this.setState({active: event});
     }
