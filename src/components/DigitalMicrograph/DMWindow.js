@@ -8,6 +8,13 @@ import { AutoFilter } from './AutoFilter';
 
 import SaveIcon from 'img/SaveIcon.png';
 import OpenIcon from 'img/OpenIcon.png';
+import GreenIcon from 'img/GreenIcon.png';
+import DotsSaveIcon from 'img/DotsSaveIcon.png';
+import Save123Icon from 'img/123SaveIcon.png';
+import CursorIcon from 'img/CursorIcon.png';
+import HandIcon from 'img/HandIcon.png';
+import MagnifierIcon from 'img/MagnifierIcon.png';
+import TextIcon from 'img/TextIcon.png';
 
 class DMWindow extends React.Component{
   constructor(props){
@@ -90,12 +97,30 @@ class DMWindow extends React.Component{
         source: OpenIcon,
       }, {
         type: 'icon', 
+        source: GreenIcon,
+      }, {
+        type: 'icon', 
         source: SaveIcon,
+      }, {
+        type: 'icon',
+        source: Save123Icon,
+      }, {
+        type: 'icon',
+        source: DotsSaveIcon,
       }, {
         type: 'separator',
       }, {
         type: 'icon',
-        source: OpenIcon,
+        source: CursorIcon,
+      }, {
+        type: 'icon',
+        source: HandIcon,
+      }, {
+        type: 'icon',
+        source: MagnifierIcon,
+      }, {
+        type: 'icon',
+        source: TextIcon,
       }
     ];
 
