@@ -23,10 +23,20 @@ class Dropdown extends React.Component{
     this.displayDropdown = this.displayDropdown.bind(this);
     this.displayArrow = this.displayArrow.bind(this);
     this.render = this.render.bind(this);
+    this.closeDropdown = this.closeDropdown.bind(this);
+
   }
 
   expandDropdown(){
-    this.setState({selected: !this.state.selected});
+    this.setState({selected: true});
+    global.document.addEventListener('click', this.closeDropdown, false);
+  }
+
+  closeDropdown(event){
+    if (event.target.className !== 'DropdownOptions'){
+      this.setState({selected: false});
+      global.document.removeEventListener('click', this.closeDropdown);
+    }
   }
 
   displayDropdown(){
@@ -50,8 +60,6 @@ class Dropdown extends React.Component{
     if (this.props.topOffset){
       cssVal = {top: this.props.topOffset};
     }
-
-    console.log(cssVal);
 
     return(
       <div className={optionsClassName} style={cssVal}>
