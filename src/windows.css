@@ -146,11 +146,16 @@ body{
   margin-left: 3px;
   margin-right: 3px;
   margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .FileBarIcon:active{
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 2px;
+  margin-right: 0px;
+  margin-top: 1px;
+  margin-bottom: -1px;
+  padding-left: 1px;
+  padding-right: 1px;
   border-top: 1px solid #808080;
   border-left: 1px solid #808080;
   border-right: 1px solid white;
