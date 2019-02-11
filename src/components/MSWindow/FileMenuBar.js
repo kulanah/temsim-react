@@ -60,6 +60,8 @@ class FileMenuBar extends React.Component{
       iconsArr = this.props.icons.map(icon => {
         if (icon.type === 'icon'){
           return <img src={icon.source} className='FileBarIcon' alt='' key={Math.random()} />;
+        } else if (icon.type === 'disabledIcon'){
+          return <img src={icon.source} className='DisabledFileBarIcon' alt='' key={Math.random()} />;
         } else if (icon.type === 'separator'){
           return <span className='IconBarSeparator' key={Math.random()}></span>;
         } else {

@@ -102,10 +102,10 @@ class DMWindow extends React.Component{
         type: 'icon', 
         source: SaveIcon,
       }, {
-        type: 'icon',
+        type: 'disabledIcon',
         source: Save123Icon,
       }, {
-        type: 'icon',
+        type: 'disabledIcon',
         source: DotsSaveIcon,
       }, {
         type: 'separator',
