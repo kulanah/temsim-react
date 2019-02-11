@@ -10,6 +10,84 @@ import 'components/TEMUI/TEMUIStatusBar.css';
 import { Dropdown } from 'components/MSWindow/Dropdown';
 
 class TEMUIStatusBar extends React.Component{
+
+  createDropdown(){
+    let dropdownProps = {
+      expandDirection: 'up',
+      items : [
+        {
+          text: ' - None - ',
+          component: null
+        }, {
+          text: 'Alignments',
+          component: null,
+        }, {
+          text: 'Application Preferences',
+          component: null,
+        }, {
+          text: 'Application Selection',
+          component: null,
+        }, {
+          text: 'Control Pads',
+          component: null,
+        }, {
+          text: 'Dark Field',
+          component: null,
+        }, {
+          text: 'Direct Alignments',
+          component: null,
+        }, {
+          text: 'FEG Control (Expert)',
+          component: null,
+        }, {
+          text: 'FEG Registers',
+          component: null,
+        }, {
+          text: 'Filter',
+          component: null,
+        }, {
+          text: 'High Tension',
+          component: null,
+        }, {
+          text: 'Holography',
+          component: null,
+        }, {
+          text: 'Normalizations',
+          component: null,
+        }, {
+          text: 'PEELS',
+          component: null,
+        }, {
+          text: 'STEM Detector (User)',
+          component: null,
+        }, {
+          text: 'STEM Imaging (Expert)',
+          component: null,
+        }, {
+          text: 'Stigmator',
+          component: null,
+        }, {
+          text: 'System Status',
+          component: null,
+        }, {
+          text: 'Vacuum (User)',
+          component: null,
+        }, {
+          text: 'Vacuum Overview',
+          component: null,
+        }, {
+          text: 'Workspace Layout',
+          component: null,
+        }
+      ],
+    };
+    
+    dropdownProps = {...dropdownProps, topOffset: -dropdownProps.items.length * 1.28 + 'em'};
+
+
+    return <Dropdown className='StatusDADropdown' {...dropdownProps} />;
+  }
+
   render(){
     return(
       <div className='TEMUIStatusBar'>
@@ -27,7 +105,7 @@ class TEMUIStatusBar extends React.Component{
             <button className='windowsButton StatusBarDirectAlignButton'><img src={blueSquare} alt='' /></button>
             <button className='windowsButton StatusBarDirectAlignButton'><img src={blueUnderline} alt='' /></button>
             <span>
-              <Dropdown className='StatusDADropdown' />
+              {this.createDropdown()}
             </span>
             <button className='windowsButton StatusBarDirectAlignButton'><img id='StatusDAClose' src={closeButton} alt='' /></button>
           </span>

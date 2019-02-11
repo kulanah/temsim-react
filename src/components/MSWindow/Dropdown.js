@@ -6,18 +6,18 @@ class Dropdown extends React.Component{
   constructor(props){
     super(props);
 
+    let className;
+    let active;
+    let selected = false;
     
-    if (this.props.className){
-      this.state = {
-        className: this.props.className + ' Dropdown',
-        selected: false,
-      };
-    } else{
-      this.state = {
-        className: 'Dropdown',
-        selected: false,
-      };
-    }
+    className = this.props.className ? this.props.className + ' Dropdown' : 'Dropdown';
+    active = this.props.items ? this.props.items[0] : 'Search';
+
+    this.state = { 
+      className: className, 
+      active: active, 
+      selected: selected,
+    };
 
     this.expandDropdown = this.expandDropdown.bind(this);
     this.displayDropdown = this.displayDropdown.bind(this);
@@ -32,7 +32,7 @@ class Dropdown extends React.Component{
   displayDropdown(){
     if (this.state.selected){
 
-      if (this.props.options){
+      if (this.props.items){
         return this.displayOptions();
       } else {
         return this.displayEmpty();
@@ -44,7 +44,22 @@ class Dropdown extends React.Component{
   }
 
   displayOptions(){
+    let optionsClassName = 'DropdownOptions ' + this.props.className + 'Options';
+    let cssVal = null;
 
+    if (this.props.topOffset){
+      cssVal = {top: this.props.topOffset};
+    }
+
+    console.log(cssVal);
+
+    return(
+      <div className={optionsClassName} style={cssVal}>
+        {this.props.items.map(item => {
+          return (<div className='DropdownSelection'>{item.text}</div>);
+        })}
+      </div>
+    );
   }
 
   displayEmpty(){
@@ -67,7 +82,7 @@ class Dropdown extends React.Component{
       <div className={this.state.className} > 
         <div className='DropdownDisplay'>
           <span>
-            Search
+            {this.props.items && this.props.items[0] ? this.props.items[0].text : 'Search'}
           </span>
           {this.displayArrow()}
         </div>
