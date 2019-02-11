@@ -47,6 +47,7 @@ body{
 #startMenuLeft{
   display: flex;
   justify-content: flex-start;
+  height: 100%;
 }
 
 .clock{
