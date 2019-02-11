@@ -87,7 +87,7 @@ class Dropdown extends React.Component{
 
   render(){
     return (
-      <div className={this.state.className} > 
+      <div className={this.state.className} onClick={this.expandDropdown}> 
         <div className='DropdownDisplay'>
           <span>
             {this.props.items && this.props.items[0] ? this.props.items[0].text : 'Search'}
