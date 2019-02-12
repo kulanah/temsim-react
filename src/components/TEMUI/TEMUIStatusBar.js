@@ -82,7 +82,7 @@ class TEMUIStatusBar extends React.Component{
       ],
     };
     
-    dropdownProps = {...dropdownProps, topOffset: -dropdownProps.items.length * 1.28 + 'em'};
+    dropdownProps = {...dropdownProps, topOffset: -dropdownProps.items.length * 1.18 + 'em'};
 
 
     return <Dropdown className='StatusDADropdown' {...dropdownProps} />;
