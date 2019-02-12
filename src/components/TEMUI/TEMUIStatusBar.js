@@ -16,7 +16,7 @@ class TEMUIStatusBar extends React.Component{
       expandDirection: 'up',
       items : [
         {
-          text: ' - None - ',
+          text: '- None -',
           component: null
         }, {
           text: 'Alignments',

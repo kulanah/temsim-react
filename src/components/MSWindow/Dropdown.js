@@ -61,8 +61,11 @@ class Dropdown extends React.Component{
       }
     });
 
-    this.setState({active: this.props.items[activeIndex]});
+    if (activeIndex === null || activeIndex === undefined){
+      activeIndex = 0;
+    }
 
+    this.setState({active: this.props.items[activeIndex]});
   }
 
   displayOptions(){
