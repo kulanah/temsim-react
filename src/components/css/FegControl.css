@@ -1,9 +1,18 @@
 #enterButton{
-  margin-left: 3em;
+  margin-left: 30%;
+  height: 2em;
+}
+
+#extractorValue{
+  margin-left: 12%;
+}
+
+#gunValue{
+  margin-left: 15%;
 }
 
 #leftSpace{
-  margin-left: 5em;
+  margin-left: 8em;
 }
 
 #extractionTitle{

@@ -1,0 +1,122 @@
+.AutoFilterContent{
+  padding-bottom: 3px;
+  border: none;
+}
+
+.AFGroup{
+  border: 1px solid #808080;
+  box-shadow: 1px 1px white, inset 1px 1px white;
+  margin: 9px 2px 2px 2px;
+  font-size: 12px;
+  width: 97%;
+  text-align: left;
+}
+
+.AFGroupHeader{
+  position: relative;
+  top: -8px;
+  left: 9px;
+  background: #d4d0c8;
+  text-align: left;
+}
+
+.AutoFilterWindow{
+  position: absolute;
+  top: 2em;
+  right: 0;
+  margin-right: 1em;
+  width: 140px;
+  /* box-shadow: 2px 2px 7px black; */
+  /* border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid #808080;
+  border-bottom: 3px solid #808080; */
+  /* background: #d4d0c8; */
+}
+
+.AFButton{
+  border-top: 4px solid #bbbbbb;
+  border-left: 4px solid #bbbbbb;
+  border-bottom: 4px solid #999;
+  border-right: 4px solid #888888;
+
+  box-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+
+  width: 33px;
+  height: 33px;
+}
+ 
+.AFButtonSpan{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.AFLabel{
+  text-align: center;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.AutoFilter2x3{
+  display: grid;
+  grid-template-rows: 1px [row1start] 60px [row1end] 2px [row2start] 50px [row2end] 3px [numberinput1start] 12px [row3start] 18px [numberinput1end] 3px [numberinput2start] 30px [number2inputend] 8px [row3end];
+  grid-template-columns: 2px [leftcolstart] 60px [leftcolend] 3px [rightcolstart] 60px [rightcolend] 2px;
+}
+
+.TopLeft2x3 {
+  grid-column: leftcolstart/leftcolend;
+  grid-row: row1start/row1end;
+}
+
+.TopRight2x3 {
+  grid-column: rightcolstart/rightcolend;
+  grid-row: row1start/row1end;
+}
+
+.MiddleLeft2x3 {
+  grid-column: leftcolstart/leftcolend;
+  grid-row: row2start/row2end;
+}
+
+.MiddleRight2x3 {
+  grid-column: rightcolstart/rightcolend;
+  grid-row: row2start/row2end;
+}
+
+.BottomLeft2x3 {
+  grid-column: leftcolstart/leftcolend;
+  grid-row: row3start/row3end;
+}
+
+.BottomRight2x3{
+  grid-column: rightcolstart/rightcolend;
+  grid-row: row3start/row3end;
+}
+.WindowsFilter2x2 {
+display: grid;
+grid-template-rows: 4px [row1start] 60px [row1end] 2px [row2start] 50px [row2end] 3px;
+grid-template-columns: 1px [leftcolstart] 45px [leftcolend] 3px [rightcolstart] 50px [rightcolend] 5px;
+}
+
+.TopLeft2x2 {
+grid-column: leftcolstart/leftcolend;
+grid-row: row1start/row2end;
+}
+
+.TopRight2x2 {
+grid-column: rightcolstart/rightcolend;
+grid-row: row1start/row2end;
+}
+
+.BottomLeft2x2 {
+grid-column: leftcolstart/leftcolend;
+grid-row: row2start/row3end;
+}
+
+.BottomRight2x2 {
+grid-column: rightcolstart/rightcolend;
+grid-row: row2start/row3end;
+}

@@ -1,0 +1,166 @@
+.DMContentBackground{
+  background: #808080;
+  width: auto;
+  height: auto;
+  flex-grow: 1;
+  margin: 3px;
+}
+
+#DMLeftColumn{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.digitalMicrographDiv{
+  height: 100%;
+}
+
+.DigitalMicrographContent{
+  background: #D4D0C8;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  box-shadow: 0.5px 0.5px 0 0.5px #404040;
+  padding-bottom: 3px;
+}
+
+.DigitalMicrographCamera{
+  top: 0;
+  left: 0;
+  width: 20%;
+  flex-shrink: 1;
+}
+
+.DigitalMicrographBottom{
+  width: 13%;
+  flex-grow: 1;
+}
+
+.MiniTitleBar{
+  margin: 2px;
+  background: linear-gradient(to right, #808080 40%, #C0C0C0);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.MiniCloseButtonImg{
+  height: 0.8em;
+  width: 0.7em;
+  font-size: 14px;
+}
+
+.MiniCloseButton{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: -1px;
+  height: 0.8em;
+  width: 0.8em;
+
+  padding: 0 0 0 1px;
+}
+
+.MiniCloseButton:active{
+  margin-top: 5px;
+  margin-bottom: 2px;
+  margin-right: -2px;
+}
+
+.CameraExpand{
+  margin-left: 3px;
+}
+
+.DMContentGroup{
+  width: auto;
+  margin-left: 2px;
+  margin-right: 3px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  box-shadow: 1px 0px 0px 0px #404040, 0px 1px 0px 0px #404040, 1px 1px 0px 0px #404040;
+
+  margin-bottom: 1px;
+  padding-bottom: 5px;
+}
+
+.DMContentRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.CenterLeftContent{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  padding-top: 3px;
+  padding-left: 3px;
+  margin: 2px 0 1px 4px;
+  width: 93%;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.CenterLeftContent .CenterLeftHeader:nth-child(2){
+  flex-grow: 1;
+}
+
+.RightContent{
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 97%;
+}
+
+.CenterContent{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+
+.emptyBar{
+  width: 75%;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  margin-right: 10%;
+  margin-top: 4px;
+  height: 15px;
+}
+
+.cameraSetupDropdown{
+  width: 50%;
+}
+
+.DMGradient{
+  width: 100%;
+  height: 9px;
+  background: linear-gradient(to right, #ffff00 5%, #00ff00 70%,#ff0000)
+}
+
+.DMBottomContent{
+  height: 5%;
+}
+
+.DigitalMicrographBottom{
+  z-index: 1;
+}
+
+.DMConfigButton{
+  height: 2em;
+}
+.DMTextButton{
+  height: 2em;
+}
+
+#HighTensionVoltage{
+  font-size: 16px;
+  font-weight: bold;
+}

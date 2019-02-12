@@ -1,9 +1,13 @@
 import React from 'react';
-import 'windows.css';
+
+import { Checkbox } from 'components/MSWindow/Checkbox';
+
 import leftarrow from 'img/leftarrow.svg';
 import rightarrow from 'img/rightarrow.svg';
-import 'components/css/HighTension.css';
 import expandImg from 'img/expandArrow.png';
+
+import 'windows.css';
+import 'components/css/HighTension.css';
 
 class HighTension extends React.Component{
   render(){
@@ -16,8 +20,9 @@ class HighTension extends React.Component{
           </span>
         </div>
         <div className='leftColContent vacuumText'>
-          <div className='contentRow'>
+          <div className='contentRow spaceBetween'>
             <button className='windowsButton' id='highTensionButton'>High Tension</button>
+            <span id='HighTensionVoltage'>200 kV</span>
           </div>
           <div className='contentRow'>
             <select className='windowsSelect'>
@@ -28,8 +33,7 @@ class HighTension extends React.Component{
           </div>
           <div className='contentRow flexRow'>
             <span>
-              <input type='checkbox' name='' id=''/>
-              Free High Tension 
+              <Checkbox label='Free High Tension' />
             </span>
             <span id='emptyLine'></span>
           </div>

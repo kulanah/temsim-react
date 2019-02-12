@@ -10,11 +10,15 @@
   --leftColContentColor: #FFFBF0;
 }
 
+body{
+  background: var(--windowsGrey);
+}
+
 .leftCol{
   grid-column-start: 1;
   grid-column-end: 16;
   grid-row-start: 1;
-  grid-row-end: 96;
+  grid-row-end: 97;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -24,20 +28,40 @@
   grid-column-start: 1;
   grid-column-end: -1;
   
-  grid-row-start: 94;
+  grid-row-start: 95;
   grid-row-end: 98;
   
   display:flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-content: baseline;
-
+  align-items: center;
   background: var(--windowsGrey);
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid var(--titleBarColor);
   border-bottom: 1px solid var(--titleBarColor);
 
-  padding-top: 4px;
+  font-size: 12px;
+}
+
+#startMenuLeft{
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.clock{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+  width: 4.4em;
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-right: 3px;
+  height: 1.5em;
+  align-items: center;
 }
 
 .externalButtonsDiv{
@@ -47,32 +71,28 @@
   grid-row-start: 98;
   grid-row-end: -1;
 
-  height: 2%;
-
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
+
+  background: white;
 }
 
-.digitalMicrographDiv{
+#TEMUI{
   grid-column-start: 16;
   grid-column-end: -1;
 
   grid-row-start: 1;
-  grid-row-end: 92;
+  grid-row-end: 95;
   left: 15%;
-  width: 85vw;
-
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
 
-.tabsdiv{
-  font-family: ms-sans, helvetica, arial, sans-serif;
-  background: var(--windowsGrey);
+#TEMUIContent{
+  height: 93.5%;
 }
 
 .scrollarrows{
@@ -91,42 +111,10 @@
   padding-left: 0.4em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
+  margin-right: 1em;
   font-weight: 800;
-  font-size: 15px;
-}
-
-.tabBar{
-  padding-top: 6px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.tabs{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 85%;
-  white-space: nowrap;
-  padding-top: 3px;
-}
-
-.tabsheader{
-  display: inline-block;
-  font-weight: lighter;
-  font-size: 10px;
-  margin-left: 0.2em;
-  margin-bottom: 1em;
-  padding: 0.3em 0.6em 0.1em 0.6em;
-  border-width: 0.75px;
-  border-color: #fff #333 transparent #fff; 
-  border-style: solid;
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.selectedTab{
-  margin-top: -3px;
+  font-size: 12px;
+  margin: 2px;
 }
 
 .fileMenuBar{
@@ -135,39 +123,73 @@
   font-size: 12px;
   display: flex;
   justify-content: flex-start;
+  padding-left: 0.5em;
+  margin-bottom: 3px;
+  flex-direction: column;
 }
 
 .fileMenuBarButton{
   margin-bottom: 0;
-  padding: 5px 5px 3px 5px;
+  padding: 1px 5px 2px 5px;
 }
+
+.FileMenuButtons{
+  display: flex;
+}
+
+
+.FileMenuIcons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FileBarIcon{
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.FileBarIcon:active{
+  margin-left: 2px;
+  margin-right: 0px;
+  margin-top: 1px;
+  margin-bottom: -1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.DisabledFileBarIcon{
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.IconBarSeparator{
+  margin-left: 3px;
+  margin-right: 3px;
+  min-width: 1px;
+  min-height: 1em;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
 
 .fileMenuBarButtonSelected{
   border-top: 1px solid var(--titleBarColor);
   border-left: 1px solid var(--titleBarColor);
   border-bottom: 1px solid white;
   border-right: 1px solid white;
-  padding: 4px 4px 0px 4px;
-  margin: 1px 0 1px 0;
+  padding: 2px 4px 0px 4px;
+  margin: 0px 0 -2px 0;
   background: var(--windowsGrey);
-  /* background: #e6e6eb;  */
-  color: black;
-}
-
-/* .fileMenuBarButton:hover{
-  background: blue;
-  color: white;
-} */
-
-.fileMenuBarButton:active{
-  border-top: 1px solid var(--titleBarColor);
-  border-left: 1px solid var(--titleBarColor);
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  padding: 4px 4px 0px 4px;
-  margin: 1px 0 1px 0;
-  background: var(--windowsGrey);
-  /* background: #e6e6eb;  */
   color: black;
 }
 
@@ -200,22 +222,6 @@
 
 .button:hover{
   cursor: pointer;
-}
-
-.scrollarrows{
-  display: inline;
-}
-
-.arrowimage{
-  width: 1em;
-  height: .75em;
-}
-
-
-.arrowspan{
-  background: #D4D0C8;
-  border: solid 0.1em;
-  border-color: white grey grey white;
 }
 
 .leftColWindowsDiv{
@@ -265,14 +271,15 @@
 
 .windowsButton{
   background: var(--windowsGrey);
+  margin-bottom: 1px;
   outline: 1px solid black;
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 2px solid var(--titleBarColor);
   border-bottom: 2px solid var(--titleBarColor);
   font-size: 11px;
-  padding: 0 2px 0 2px;
   box-shadow: 2px 2px 1px var(--windowsGrey);
+  padding: 3px;
 }
 
 .windowsButton:active{
@@ -280,11 +287,18 @@
   border-left: 1px inset var(--windowsGrey);
   border-right: 1px solid white;
   border-bottom: 1px solid white;
+  margin-right: 1px;
+  margin-top: 1px;
+  margin-bottom: 0px;
 }
 
 .windowsSelect{
   border: 1px solid black;
   background: white;
+}
+
+.spaceBetween{
+  justify-content: space-between;
 }
 
 .contentRow{
@@ -434,4 +448,83 @@
   position: absolute;
   background: red;
   color: white;
+}
+
+.windowsWindow{
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  background: var(--windowsGrey);
+  margin-bottom: 2px;
+  padding-right: 5px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  box-shadow: 1px 1px 2px black;
+
+  box-sizing: border-box;
+}
+
+.checkbox{
+  display: inline-block;
+  background: white;
+  width: 0.65em;
+  height: 0.65em;
+  margin-top: 0.25em;
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #D4D0C8;
+  border-bottom: 1px solid #D4D0C8;
+  box-shadow: 1px 1px 0 white, 1px 0 0 white, 0 1px 0 white, -1px -1px 0 #808080, -1px 0 0 #808080, 0 -1px 0 #808080;
+  font-size: 14px;
+}
+
+.checkboxRow{
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+}
+
+.checkmark{
+  position: relative;
+  top: -4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.checkboxLabel{
+  position: relative;
+  margin-left: 5px;
+}
+
+.windowsInput{
+  user-select: text;
+  background: white;
+  width: 4em;
+  min-height: 1.1em;
+
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-bottom: 1px solid var(--windowsGrey);
+  border-right: 1px solid var(--windowsGrey);
+  box-shadow: 
+    -1px 0 0 var(--titleBarColor), 
+    -1px -1px 0 var(--titleBarColor), 
+    0 -1px var(--titleBarColor), 
+    1px 1px 0 white, 
+    1px 0 0  white, 
+    0 1px 0 white, 
+    -1px 1px 0 white, 
+    1px -1px 0 white;
+
+  margin-left: 5px;
+}
+input[type=number].removeSpinner::-webkit-inner-spin-button, 
+input[type=number].removeSpinner::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

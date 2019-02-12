@@ -24,12 +24,16 @@ class FegControl extends React.Component{
               <button className='windowsButton'><img src={uparrow} alt=''/></button>
               <button className='windowsButton'><img src={downarrow} alt=''/></button>
             </span>
+            <span className='contentRowText' id='gunValue'>4</span>
           </div>
           <div className='contentRow'>
             <span className='contentRowText' id='leftSpace'>Extractor: </span>
             <span className='stackedButtons'>
               <button className='windowsButton'><img src={uparrow} alt=''/></button>
               <button className='windowsButton'><img src={downarrow} alt=''/></button>
+            </span>
+            <span className='contentRowText' id='extractorValue'>
+              4500
             </span>
             <span>
               <button className='windowsButton' id='enterButton'><img src={enterbutton} alt=''/></button>

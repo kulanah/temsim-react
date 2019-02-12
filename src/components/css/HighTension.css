@@ -6,6 +6,7 @@
 #highTensionButton{
   background: #ffff80;
   height: 2em;
+  min-width: 7em;
 }
 
 #freeHighTensionRow{
@@ -21,5 +22,5 @@
   width: 56%;
   flex: 1;
   border-bottom: 1px solid black;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }

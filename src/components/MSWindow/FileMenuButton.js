@@ -20,7 +20,7 @@ class FileMenuButton extends React.Component{
 
   showMenu(){
     if(this.props.active === this.props.header){
-      return <Popup {...this.state.popup}/>;
+      return <Popup header={this.props.header} buttons={this.props.buttons} />;
     }
   }
 
@@ -28,14 +28,7 @@ class FileMenuButton extends React.Component{
     this.setState({ active: false });
   }
 
-  clickItem(event){
-    this.setState({
-      popup: {
-        x: event.clientX,
-        y: event.clientY,
-        header: this.props.header,
-      }
-    });
+  clickItem(){
     this.props.onClick(this.props.header);
     this.showHeader();
   }

@@ -1,14 +1,34 @@
 .minMaxCloseButtonsDiv{
   display: flex;
   flex-direction: row;
+  margin-right: 0.3em;
 }
 
 .minMaxCloseButton{
-  margin-left: 1em;
+  position: relative;
+  top: -2px;
+  margin-left: 3px;
+  margin-top: 0.25em;
   color: black;
   background: var(--windowsGrey);
-  width: 1.5em;
+  width: 0.7em;
+  height: 0.8em;
+  box-shadow: 1px 1px 1px black;
+}
+
+.minMaxCloseButton:active{
+  margin-top: 3px;
+}
+
+.minMaxCloseButtonImg{
+  position: relative;
+  left: -2px;
+  top: -2px;
   height: 1.5em;
+}
+
+.minMaxCloseButtonImg:active{
+  top: -1px;
 }
 
 .minMaxCloseButtonDisabled{

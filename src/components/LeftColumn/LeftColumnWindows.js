@@ -12,7 +12,7 @@ class LeftColumnWindows extends React.Component{
     super(props);
 
     this.state = {
-      tabs: [<SetupTab />, <SearchTab />, <TuneTab />, <STEMTab />, <FEGRegisterTab />, <EFTEMTab />, <DarkFieldTab />]
+      tabs: [<SetupTab key={Math.random} />, <SearchTab key={Math.random} />, <TuneTab key={Math.random} />, <STEMTab key={Math.random} />, <FEGRegisterTab key={Math.random} />, <EFTEMTab key={Math.random} />, <DarkFieldTab key={Math.random} />]
     };
   }
 
