@@ -24,7 +24,7 @@ class Dropdown extends React.Component{
     this.displayArrow = this.displayArrow.bind(this);
     this.render = this.render.bind(this);
     this.closeDropdown = this.closeDropdown.bind(this);
-
+    this.setActive = this.setActive.bind(this);
   }
 
   expandDropdown(){
@@ -53,6 +53,18 @@ class Dropdown extends React.Component{
     }
   }
 
+  setActive(option){
+    let activeIndex = null;
+    this.props.items.map((item, index) => {
+      if (item.text === option.target.innerText){
+        activeIndex = index;
+      }
+    });
+
+    this.setState({active: this.props.items[activeIndex]});
+
+  }
+
   displayOptions(){
     let optionsClassName = 'DropdownOptions ' + this.props.className + 'Options';
     let cssVal = null;
@@ -64,7 +76,7 @@ class Dropdown extends React.Component{
     return(
       <div className={optionsClassName} style={cssVal}>
         {this.props.items.map(item => {
-          return (<div className='DropdownSelection'>{item.text}</div>);
+          return (<div className='DropdownSelection' key={item.text} onClick={this.setActive}>{item.text}</div>);
         })}
       </div>
     );
@@ -90,7 +102,7 @@ class Dropdown extends React.Component{
       <div className={this.state.className} onClick={this.expandDropdown}> 
         <div className='DropdownDisplay'>
           <span>
-            {this.props.items && this.props.items[0] ? this.props.items[0].text : 'Search'}
+            {this.state.active.text}
           </span>
           {this.displayArrow()}
         </div>
